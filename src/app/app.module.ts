@@ -15,6 +15,8 @@ import { AboutComponent } from './about/about.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { HomeComponent } from './home/home.component';
 import { BannerComponent } from './banner/banner.component';
+import { ClientCounterComponent } from './client-counter/client-counter.component';
+import { OurClientComponent } from './our-client/our-client.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { BannerComponent } from './banner/banner.component';
     AboutComponent,
     TestimonialsComponent,
     HomeComponent,
-    BannerComponent
+    BannerComponent,
+    ClientCounterComponent,
+    OurClientComponent
   ],
   imports: [
     BrowserModule,
