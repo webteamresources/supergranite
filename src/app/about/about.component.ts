@@ -7,8 +7,8 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
-  configUrl = './assets/content/aboutpage.json';
-  AboutPageContent: string[];
+  configUrl = '../../assets/content/aboutpage.json';
+  AboutPageContent = [];
 
   constructor(private httpService: HttpClient) { }
 
