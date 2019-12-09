@@ -1,1 +1,29 @@
-<p>about works!</p>
+<section class="hero-wrap hero-wrap-2" [ngStyle]="{'background-image': url('AboutPageContent.bgImage')}">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text align-items-center justify-content-center">
+        <div class="col-md-9 ftco-animate text-center">
+          <h1 class="mb-2 bread">{{AboutPageContent.titleTxt}}</h1>
+          <p class="breadcrumbs"><span class="mr-2"><a>Home <i class="ion-ios-arrow-forward"></i></a></span> <span>{{AboutPageContent.titleTxt}} <i class="ion-ios-arrow-forward"></i></span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About -->       
+<section class="ftco-section ftc-no-pb">
+    <div class="container">
+    <div class="row no-gutters">
+        <div class="col-md-5 p-md-5 img img-2">
+    </div>
+    <div class="col-md-7 wrap-about pb-md-5 ftco-animate">
+    <div class="heading-section mb-5 pl-md-5">
+    <div class="ml-md-5">
+    <span class="subheading subheading-with-line"><small class="pr-2 bg-white">{{AboutPageContent.pgTitle}}</small></span>
+    <h2 class="mb-4">{{AboutPageContent.titleTxt}}</h2>
+    </div>
+    </div>
+    <div class="pl-md-5 ml-md-5 mb-5" [innerHTML]="AboutPageContent.contentTxt"></div>
+    </div>
+    </div>
+    </div>
+    </section>
