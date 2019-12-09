@@ -7,15 +7,16 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
-  configUrl = '../../assets/content/aboutpage.json';
-  AboutPageContent = [];
 
   constructor(private httpService: HttpClient) { }
+
+  configUrl = '../../assets/content/aboutpage.json';
+  aboutPageContent = [];
 
   ngOnInit() {
     this.httpService.get(this.configUrl).subscribe(
       data => {
-        this.AboutPageContent = data as string [];
+        this.aboutPageContent = data as string [];
       },
       (err: HttpErrorResponse) => {
         console.log (err.message);
