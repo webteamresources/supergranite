@@ -25,8 +25,7 @@
           <div class="container-wrap">
               <div class="row d-flex align-items-stretch no-gutters">
                   <div class="col-md-6 p-5 order-md-last">
-                      <form id="contact-form" method="post" action="js/contact.php" role="form">
-                          
+                      <!--<form id="contact-form" method="post" action="js/contact.php" role="form">                          
                           <div class="row">
                           <div class="col-md-12">
                               <div class="form-group">
@@ -54,7 +53,39 @@
                               </div>
                           </div>
                       </div>
-          </form>
+                    </form>-->
+                    <form>                          
+                          <div class="row">
+                          <div class="col-md-12">
+                              <div class="form-group">
+                                  <input type="text" 
+                                  name="name" class="form-control" 
+                                  [(ngModel)] ="fname"
+                                  placeholder="Please enter your firstname *" required="required" 
+                                  data-error="Firstname is required.">
+                                  <div class="help-block with-errors">{{ fname }}</div>
+                              </div>
+                              <div class="form-group">
+                                  <input id="form_lastname" type="text" name="surname" class="form-control"  [(ngModel)] ="lname" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                              <div class="form-group">
+                                  <input id="form_need" type="text" name="need" [(ngModel)] ="Subject" class="form-control" placeholder="Subject">
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                              <div class="form-group">
+                                  <textarea id="form_message" name="message" class="form-control"  [(ngModel)] ="Message" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                              <div class="col-md-12">
+                                  <p class="text-muted"><strong>*</strong> These fields are required.</p>
+                              </div>
+                              <div class="form-group">
+                                  <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+                              </div>
+                          </div>
+                      </div>
+                    </form>
                   </div>
                   <div class="col-md-6 d-flex align-items-stretch">
                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.7170015578304!2d72.93425011531399!3d19.163861154183767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b85ced7356a1%3A0x764b100c1e9bfca2!2sSuper%20Granites%20And%20Marbles!5e0!3m2!1sen!2sin!4v1575628794751!5m2!1sen!2sin" width="711" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
