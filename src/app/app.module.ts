@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms'
 import { ProductService } from './../assets/shared/product.service';
+import { ShortenPipe } from './../assets/shared/shorten.pipe';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -35,6 +36,7 @@ import { OurClientComponent } from './our-client/our-client.component';
     HomeComponent,
     BannerComponent,
     ClientCounterComponent,
+    ShortenPipe,
     OurClientComponent
   ],
   imports: [
