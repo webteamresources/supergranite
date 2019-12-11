@@ -1,28 +1,4 @@
-<!-- <section class="bg-light">
-    <div class="container">
-        <div class="row justify-content-start mb-5 pb-2">
-            <div class="col-xs-6">
-                <select class="default" name="security_question_1" onchange="filterProduct(this)">
-                    <option value="All" class="form-control" selected="">All</option>
-                    <option value="red">Red</option>
-                    <option value="white">White</option>
-                    <option value="blue">Blue</option>
-                    <option value="green">Green</option>
-                </select>
-            </div>
-            <div class="col-xs-6">  
-                <select class="default" name="security_question_1" onchange="filterProduct(this)">
-                    <option value="All" class="form-control" selected="">All</option>
-                    <option value="asia-pacific">Asia Pacific</option>
-                    <option value="africa">Africa</option>
-                    <option value="america">America</option>
-                    <option value="europe">Europe</option>
-                </select>
-            </div>
-        </div>
-    </div>
-</section> -->
-<section class="ftco-section bg-light" *ngFor="let prodCont of productDetails">
+<section class="ftco-section bg-light" *ngFor="let prodCont of productsContent.productDetails">
     <div class="container">
         <div class="row justify-content-start mb-5 pb-2">
             <div class="col-md-4 heading-section">
@@ -36,7 +12,7 @@
     </div>
     <div class="container">
         <div class="row no-gutters1">
-            <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of prodCont.products">
+            <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of productsList">
                 <img [src]="product.imagePath" class="img-fluid" alt="{{product.name}}">
                 <!-- <div class="project">
                     <img [src]="product.imagePath" class="img-fluid" alt="{{product.name}}">
@@ -48,7 +24,7 @@
                         <span class="icon-expand"></span>
                     </a>
                 </div> -->
-                <span>{{prodCont.productCat}}</span>
+                <span>{{product.category}}</span>
                 <h3><a href="#">{{product.name}}</a></h3>
             </div>
         </div>

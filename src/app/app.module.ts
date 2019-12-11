@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from "@angular/forms";
 
 import { ProductService } from './../assets/shared/product.service';
 
@@ -40,7 +41,8 @@ import { OurClientComponent } from './our-client/our-client.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]

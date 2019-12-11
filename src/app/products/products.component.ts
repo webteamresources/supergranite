@@ -6,7 +6,7 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.css']
 })
-export class ProductsComponent implements OnInit {
+export class ProductsComponent implements OnInit { 
 
   constructor(private httpService: HttpClient) { }
 
@@ -23,4 +23,6 @@ export class ProductsComponent implements OnInit {
       }
     );
   }
+
+
 }
