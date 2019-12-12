@@ -1,25 +1,38 @@
-<div class="container">
-    <div class="img-container"  *ngFor="let i of sliderArray; let select = index;"
-         [ngClass]="{'selected': select == selectedIndex}">
-      <img src="{{i.img}}" alt="{{i.alt}}" >
-    </div>
-   
-    <!--</div>-->
-    <div [ngStyle]="{'transform': 'translateY('+ transform + '%' +')', 'transition': '.8s'}">
-      <div class="text-container">
-        <div class="page-text" *ngFor="let i of sliderArray;let select = index;" [ngClass]="{'selected': select == selectedIndex}">
-          <h3>{{i.text}}</h3>
+<ngb-carousel
+[showNavigationIndicators]="true"
+interval="6000"
+[pauseOnHover]="true">
+  <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+          <img src="../../assets/resources/images/bg_1.jpg" alt="Random first slide">
+      </div>
+      <div class="carousel-caption slider-text">
+          <div class="text">
+            <h1>First slide label</h1>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </div>
       </div>
-    </div>
-   
-   </div>
-   
-   <div class="slider">
-    <div class="slide-button-parent-container"  *ngFor="let i of sliderArray; let x =index" (click)="selected(x)" >
-       <div class="select-box">
-        <div class="slide-button" [ngClass]="{'slide-button-select': x == selectedIndex}" >
+  </ng-template>
+  <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+          <img src="../../assets/resources/images/bg_2.jpg" alt="Random first slide">
+      </div>
+      <div class="carousel-caption slider-text">
+          <div class="text">
+            <h1>First slide label</h1>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </div>
-       </div>
-    </div>
-   </div>
+      </div>
+  </ng-template>
+  <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+          <img src="../../assets/resources/images/bg_3.jpg" alt="Random first slide">
+      </div>
+      <div class="carousel-caption slider-text">
+          <div class="text">
+            <h1>First slide label</h1>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div>
+      </div>
+  </ng-template>
+</ngb-carousel>
