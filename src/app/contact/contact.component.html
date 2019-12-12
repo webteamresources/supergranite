@@ -1,1 +1,61 @@
-<p>contact works!</p>
+<!-- Contact -->       
+<section class="ftco-section contact-section bg-light">
+    <div class="container">
+      <div class="row d-flex mb-5 contact-info">
+        <div class="col-md-12 mb-4">
+          <h2 class="h4">Contact Information</h2>
+        </div>
+        <div class="w-100"></div>
+        <div class="col-md-3">
+          <p><span>Address:</span> <br>Madni Estate, Behind Famous Timber Mart, Dargah Road, Bhandup Complex Road, Sonapur, Bhandup West, Mumbai, Maharashtra 400078</p>
+        </div>
+        <div class="col-md-3">
+          <p><span>Phone:</span> <br><a href="tel:9820092602">+91 9820 092 602</a></p>
+        </div>
+        <div class="col-md-3">
+          <p><span>Email:</span> <br><a href="mailto:info@supergranitesandmarbles.com">info@supergranitesandmarbles.com</a></p>
+        </div>
+        <div class="col-md-3">
+          <p><span>Website</span> <br><a href="http://supergranitesandmarbles.com/">www.supergranitesandmarbles.com</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+      <section class="ftco-section ftco-no-pt ftco-no-pb contact-section">
+          <div class="container-wrap">
+              <div class="row d-flex align-items-stretch no-gutters">
+                  <div class="col-md-6 p-5 order-md-last">   
+                    <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">                   
+                          <div class="row">
+                            <div class="col-md-12">    
+                                <div class="form-group">
+                                    <input id="form_firstname" type="text" class="form-control" formControlName="fname" name="name" placeholder="Please enter your firstname *" data-error="Firstname is required.">
+                                    <div class="help-block with-errors" *ngIf="!signupForm.get('fname').valid && signupForm.get('fname').touched">Firstname is required.</div>
+                                </div>
+                                <div class="form-group">
+                                    <input id="form_lastname" type="text" class="form-control" formControlName="lname" name="surname" placeholder="Please enter your lastname *" data-error="Lastname is required.">
+                                    <div class="help-block with-errors" *ngIf="!signupForm.get('lname').valid && signupForm.get('lname').touched">Lastname is required.</div>
+                                </div>
+                                <div class="form-group">
+                                    <input id="form_need" type="text" class="form-control" formControlName="subject" name="subject" placeholder="Subject">
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="form_message" class="form-control" formControlName="message" name="message" placeholder="Message for me *" rows="4"  data-error="Please, leave us a message."></textarea>
+                                    <div class="help-block with-errors" *ngIf="!signupForm.get('message').valid && signupForm.get('message').touched">Please, leave us a message.</div>
+                                </div>
+                                <div class="col-md-12">
+                                    <p class="text-muted"><strong>*</strong> These fields are required.</p>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary py-3 px-5">Send Message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                  </div>
+                  <div class="col-md-6 d-flex align-items-stretch">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.7170015578304!2d72.93425011531399!3d19.163861154183767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b85ced7356a1%3A0x764b100c1e9bfca2!2sSuper%20Granites%20And%20Marbles!5e0!3m2!1sen!2sin!4v1575628794751!5m2!1sen!2sin" width="711" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                  </div>
+              </div>
+          </div>
+         </section>

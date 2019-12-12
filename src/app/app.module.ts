@@ -1,5 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms'
+import { ProductService } from './../assets/shared/product.service';
+import { ShortenPipe } from './../assets/shared/shorten.pipe';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +17,9 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { HomeComponent } from './home/home.component';
+import { BannerComponent } from './banner/banner.component';
+import { ClientCounterComponent } from './client-counter/client-counter.component';
+import { OurClientComponent } from './our-client/our-client.component';
 
 @NgModule({
   declarations: [
@@ -26,13 +33,19 @@ import { HomeComponent } from './home/home.component';
     ContactComponent,
     AboutComponent,
     TestimonialsComponent,
-    HomeComponent
+    HomeComponent,
+    BannerComponent,
+    ClientCounterComponent,
+    ShortenPipe,
+    OurClientComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
