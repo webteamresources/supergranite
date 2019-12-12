@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { ProductService } from './../assets/shared/product.service';
 import { ShortenPipe } from './../assets/shared/shorten.pipe';
 
@@ -43,6 +43,7 @@ import { OurClientComponent } from './our-client/our-client.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
     ReactiveFormsModule
   ],
   providers: [ProductService],

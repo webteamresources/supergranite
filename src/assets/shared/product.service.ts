@@ -10,10 +10,10 @@ export class ProductService {
             new ProductModel ( "test 1", "Granites", "Red", "Norway", "/assets/resources/images/products/granite-products/granite-blocks.jpg" ),
             new ProductModel ( "test 2", "Granites", "Red", "Norway", "/assets/resources/images/products/granite-products/granite-blocks.jpg" ),
             new ProductModel ( "test 3", "Granites", "Red", "Norway", "/assets/resources/images/products/granite-products/granite-blocks.jpg" ),
-            new ProductModel ( "test 3", "Granites", "Red", "Norway", "/assets/resources/images/products/granite-products/granite-blocks.jpg" ),
-            new ProductModel ( "test 3", "Granites", "Red", "Norway", "/assets/resources/images/products/granite-products/granite-blocks.jpg" ),
-            new ProductModel ( "test 3", "Granites", "Red", "Norway", "/assets/resources/images/products/granite-products/granite-blocks.jpg" ),
-            new ProductModel ( "test 3", "Granites", "Red", "Norway", "/assets/resources/images/products/granite-products/granite-blocks.jpg" )
+            new ProductModel ( "test 4", "Granites", "Red", "Norway", "/assets/resources/images/products/granite-products/granite-blocks.jpg" ),
+            new ProductModel ( "test 5", "Granites", "Red", "Norway", "/assets/resources/images/products/granite-products/granite-blocks.jpg" ),
+            new ProductModel ( "test 6", "Granites", "Red", "Norway", "/assets/resources/images/products/granite-products/granite-blocks.jpg" ),
+            new ProductModel ( "test 7", "Granites", "Red", "Norway", "/assets/resources/images/products/granite-products/granite-blocks.jpg" )
         ];
     productsList2: ProductModel[] = [
             new ProductModel ( "Manglore Granite", "Marbles", "Blue", "North India", "/assets/resources/images/products/granite-products/granite-blocks.jpg" ),
