@@ -1,42 +1,23 @@
-<!-- <section class="bg-light">
-    <div class="container">
-        <div class="row justify-content-start mb-5 pb-2">
-            <div class="col-xs-6">
-                <select class="default" name="security_question_1" onchange="filterProduct(this)">
-                    <option value="All" class="form-control" selected="">All</option>
-                    <option value="red">Red</option>
-                    <option value="white">White</option>
-                    <option value="blue">Blue</option>
-                    <option value="green">Green</option>
-                </select>
-            </div>
-            <div class="col-xs-6">  
-                <select class="default" name="security_question_1" onchange="filterProduct(this)">
-                    <option value="All" class="form-control" selected="">All</option>
-                    <option value="asia-pacific">Asia Pacific</option>
-                    <option value="africa">Africa</option>
-                    <option value="america">America</option>
-                    <option value="europe">Europe</option>
-                </select>
-            </div>
-        </div>
-    </div>
-</section> -->
-<section class="ftco-section bg-light" *ngFor="let prodCont of productDetails">
+<section class="ftco-section bg-light" >
     <div class="container">
         <div class="row justify-content-start mb-5 pb-2">
             <div class="col-md-4 heading-section">
                 <span class="subheading subheading-with-line"><small class="pr-2 bg-light">{{ productsContent.pgTitle }}</small></span>
-                <h2 class="mb-4">{{prodCont.productCat}}</h2>
+                <h2 class="mb-4">{{productsContent1.productCat}}</h2>
             </div>
             <div class="col-md-8 pl-md-5 heading-section">
-                <div class="pl-md-4 border-line" [innerHTML]="prodCont.contentTxt"></div>
+                <div class="pl-md-4 border-line" [innerHTML]="productsContent1.contentTxt"></div>
             </div>
         </div>
     </div>
+
+    <ul>
+        <li *ngFor="let item of productsList">{{item.colorName}}</li>
+    </ul>
+
     <div class="container">
         <div class="row no-gutters1">
-            <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of prodCont.products">
+            <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of productsList1">
                 <img [src]="product.imagePath" class="img-fluid" alt="{{product.name}}">
                 <!-- <div class="project">
                     <img [src]="product.imagePath" class="img-fluid" alt="{{product.name}}">
@@ -48,9 +29,78 @@
                         <span class="icon-expand"></span>
                     </a>
                 </div> -->
-                <span>{{prodCont.productCat}}</span>
+                <span>{{product.category}}</span>
                 <h3><a href="#">{{product.name}}</a></h3>
             </div>
         </div>
     </div>
 </section>
+<section class="ftco-section bg-light" >
+    <div class="container">
+        <div class="row justify-content-start mb-5 pb-2">
+            <div class="col-md-4 heading-section">
+                <span class="subheading subheading-with-line"><small class="pr-2 bg-light">{{ productsContent2.pgTitle }}</small></span>
+                <h2 class="mb-4">{{productsContent2.productCat}}</h2>
+            </div>
+            <div class="col-md-8 pl-md-5 heading-section">
+                <div class="pl-md-4 border-line" [innerHTML]="productsContent2.contentTxt"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row no-gutters1">
+            <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of productsList2">
+                <img [src]="product.imagePath" class="img-fluid" alt="{{product.name}}">
+                <span>{{product.category}}</span>
+                <h3><a href="#">{{product.name}}</a></h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="ftco-section bg-light" >
+    <div class="container">
+        <div class="row justify-content-start mb-5 pb-2">
+            <div class="col-md-4 heading-section">
+                <span class="subheading subheading-with-line"><small class="pr-2 bg-light">{{ productsContent3.pgTitle }}</small></span>
+                <h2 class="mb-4">{{productsContent3.productCat}}</h2>
+            </div>
+            <div class="col-md-8 pl-md-5 heading-section">
+                <div class="pl-md-4 border-line" [innerHTML]="productsContent3.contentTxt"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row no-gutters1">
+            <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of productsList3">
+                <img [src]="product.imagePath" class="img-fluid" alt="{{product.name}}">
+                <span>{{product.category}}</span>
+                <h3><a href="#">{{product.name}}</a></h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="ftco-section bg-light" >
+    <div class="container">
+        <div class="row justify-content-start mb-5 pb-2">
+            <div class="col-md-4 heading-section">
+                <span class="subheading subheading-with-line"><small class="pr-2 bg-light">{{ productsContent4.pgTitle }}</small></span>
+                <h2 class="mb-4">{{productsContent4.productCat}}</h2>
+            </div>
+            <div class="col-md-8 pl-md-5 heading-section">
+                <div class="pl-md-4 border-line" [innerHTML]="productsContent4.contentTxt"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row no-gutters1">
+            <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of productsList4">
+                <img [src]="product.imagePath" class="img-fluid" alt="{{product.name}}">
+                <span>{{product.category}}</span>
+                <h3><a href="#">{{product.name}}</a></h3>
+            </div>
+        </div>
+    </div>
+</section>
+

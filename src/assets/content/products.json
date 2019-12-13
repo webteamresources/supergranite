@@ -3,77 +3,22 @@
     {
         "productCat":"Granites",
         "contentTxt": "<p>They prefer a granite supplier or podium for getting big varieties and secure transactions under a single roof. Consequently, Super Granites and Marbles, one the professional and experienced granite suppliers in India, offers real-time solutions for universal buyers</p>",
-        "contentImg":"/assets/resources/images/bg_3.jpg",
-        "products":[
-            {
-                "name":"test 1",
-                "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg"            
-            },
-            {
-                "name":"test 2",
-                "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg"            
-            },
-            {
-                "name":"test 3",
-                "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg"            
-            }
-        ]
+        "contentImg":"/assets/resources/images/bg_3.jpg"
     },
     {
         "productCat":"Marbles",
         "contentTxt": "<p>Higher granite production in India entices a large number of granite buyers from all corners of the world. When it comes to knowing more about granite production by country, how to export granite, and the largest granite producing countries, Indian granite regions (North and South India) put an end to all searches. Super Granites and Marbles is a proud supplier of region-specific North Indian and South Indian granite in different sizes, types, thicknesses, textures, and designs.</p>",
-        "contentImg":"/assets/resources/images/bg_3.jpg",
-        "products":[
-            {
-                "name":"Manglore Granite",
-                "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg"            
-            },
-            {
-                "name":"Chennai Granite",
-                "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg"            
-            },
-            {
-                "name":"Rajasthan Granite",
-                "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg"            
-            }
-        ]
+        "contentImg":"/assets/resources/images/bg_3.jpg"
     },
     {
         "productCat":"Engineering Stone",
         "contentTxt": "<p>Higher granite production in India entices a large number of granite buyers from all corners of the world. When it comes to knowing more about granite production by country, how to export granite, and the largest granite producing countries, Indian granite regions (North and South India) put an end to all searches. Super Granites and Marbles is a proud supplier of region-specific North Indian and South Indian granite in different sizes, types, thicknesses, textures, and designs.</p>",
-        "contentImg":"/assets/resources/images/bg_3.jpg",
-        "products":[
-            {
-                "name":"Manglore Granite",
-                "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg"            
-            },
-            {
-                "name":"Chennai Granite",
-                "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg"            
-            },
-            {
-                "name":"Rajasthan Granite",
-                "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg"            
-            }
-        ]
+        "contentImg":"/assets/resources/images/bg_3.jpg"
     },
     {
         "productCat":"Peeble and Cobble",
         "contentTxt": "<p>Higher granite production in India entices a large number of granite buyers from all corners of the world. When it comes to knowing more about granite production by country, how to export granite, and the largest granite producing countries, Indian granite regions (North and South India) put an end to all searches. Super Granites and Marbles is a proud supplier of region-specific North Indian and South Indian granite in different sizes, types, thicknesses, textures, and designs.</p>",
-        "contentImg":"/assets/resources/images/bg_3.jpg",
-        "products":[
-            {
-                "name":"Manglore Granite",
-                "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg"            
-            },
-            {
-                "name":"Chennai Granite",
-                "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg"            
-            },
-            {
-                "name":"Rajasthan Granite",
-                "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg"            
-            }
-        ]
+        "contentImg":"/assets/resources/images/bg_3.jpg"
     }
-]}
+]
+}

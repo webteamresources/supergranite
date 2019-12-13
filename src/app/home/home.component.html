@@ -1,6 +1,110 @@
 <app-banner></app-banner>
 <router-outlet></router-outlet>
-<app-product-listing></app-product-listing>
-<!-- <app-client-counter></app-client-counter>
+<section class="ftco-section bg-light" >
+    <div class="container">
+        <div class="row justify-content-start mb-5 pb-2">
+            <div class="col-md-4 heading-section">
+                <span class="subheading subheading-with-line"><small class="pr-2 bg-light">{{ productsContent.pgTitle }}</small></span>
+                <h2 class="mb-4">{{productsContent1.productCat}}</h2>
+            </div>
+            <div class="col-md-8 pl-md-5 heading-section">
+                <div class="pl-md-4 border-line" [innerHTML]="productsContent1.contentTxt"></div>
+                <div class="pl-md-4 border-line"><a routerLink="/products" class="btn-custom">Know More ></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row no-gutters1">
+            <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of productsList1">
+                <img [src]="product.imagePath" class="img-fluid" alt="{{product.name}}">
+                <!-- <div class="project">
+                    <img [src]="product.imagePath" class="img-fluid" alt="{{product.name}}">
+                    <div class="text">
+                        <span>{{prodCont.productCat}}</span>
+                        <h3><a href="#">{{product.name}}</a></h3>
+                    </div>
+                    <a href="#" class="icon d-flex justify-content-center align-items-center">
+                        <span class="icon-expand"></span>
+                    </a>
+                </div> -->
+                <span>{{product.category}}</span>
+                <h3><a href="#">{{product.name}}</a></h3>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="ftco-section bg-light" >
+    <div class="container">
+        <div class="row justify-content-start mb-5 pb-2">
+            <div class="col-md-4 heading-section">
+                <span class="subheading subheading-with-line"><small class="pr-2 bg-light">{{ productsContent2.pgTitle }}</small></span>
+                <h2 class="mb-4">{{productsContent2.productCat}}</h2>
+            </div>
+            <div class="col-md-8 pl-md-5 heading-section">
+                <div class="pl-md-4 border-line" [innerHTML]="productsContent2.contentTxt"></div>
+                <div class="pl-md-4 border-line"><a routerLink="/products" class="btn-custom">Know More ></a></div>                
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row no-gutters1">
+            <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of productsList2">
+                <img [src]="product.imagePath" class="img-fluid" alt="{{product.name}}">
+                <span>{{product.category}}</span>
+                <h3><a href="#">{{product.name}}</a></h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="ftco-section bg-light" >
+    <div class="container">
+        <div class="row justify-content-start mb-5 pb-2">
+            <div class="col-md-4 heading-section">
+                <span class="subheading subheading-with-line"><small class="pr-2 bg-light">{{ productsContent3.pgTitle }}</small></span>
+                <h2 class="mb-4">{{productsContent3.productCat}}</h2>
+            </div>
+            <div class="col-md-8 pl-md-5 heading-section">
+                <div class="pl-md-4 border-line" [innerHTML]="productsContent3.contentTxt"></div>
+                <div class="pl-md-4 border-line"><a routerLink="/products" class="btn-custom">Know More ></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row no-gutters1">
+            <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of productsList3">
+                <img [src]="product.imagePath" class="img-fluid" alt="{{product.name}}">
+                <span>{{product.category}}</span>
+                <h3><a href="#">{{product.name}}</a></h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="ftco-section bg-light" >
+    <div class="container">
+        <div class="row justify-content-start mb-5 pb-2">
+            <div class="col-md-4 heading-section">
+                <span class="subheading subheading-with-line"><small class="pr-2 bg-light">{{ productsContent4.pgTitle }}</small></span>
+                <h2 class="mb-4">{{productsContent4.productCat}}</h2>
+            </div>
+            <div class="col-md-8 pl-md-5 heading-section">
+                <div class="pl-md-4 border-line" [innerHTML]="productsContent4.contentTxt"></div>
+                <div class="pl-md-4 border-line"><a routerLink="/products" class="btn-custom">Know More ></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row no-gutters1">
+            <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of productsList4">
+                <img [src]="product.imagePath" class="img-fluid" alt="{{product.name}}">
+                <span>{{product.category}}</span>
+                <h3><a href="#">{{product.name}}</a></h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<app-client-counter></app-client-counter>
 <app-testimonials></app-testimonials>
-<app-our-client></app-our-client> -->

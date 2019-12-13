@@ -1,1 +1,38 @@
-<p>banner works!</p>
+<ngb-carousel
+[showNavigationIndicators]="true"
+interval="6000"
+[pauseOnHover]="true">
+  <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+          <img src="../../assets/resources/images/bg_1.jpg" alt="Random first slide">
+      </div>
+      <div class="carousel-caption slider-text">
+          <div class="text">
+            <h1>First slide label</h1>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div>
+      </div>
+  </ng-template>
+  <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+          <img src="../../assets/resources/images/bg_2.jpg" alt="Random first slide">
+      </div>
+      <div class="carousel-caption slider-text">
+          <div class="text">
+            <h1>First slide label</h1>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div>
+      </div>
+  </ng-template>
+  <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+          <img src="../../assets/resources/images/bg_3.jpg" alt="Random first slide">
+      </div>
+      <div class="carousel-caption slider-text">
+          <div class="text">
+            <h1>First slide label</h1>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div>
+      </div>
+  </ng-template>
+</ngb-carousel>

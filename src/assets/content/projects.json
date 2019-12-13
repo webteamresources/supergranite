@@ -1,0 +1,66 @@
+{   
+    "pgTitle":"Projects",
+    "category": "Private Sector Projects",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non urna at neque aliquam molestie. Etiam aliquet felis nec enim tincidunt vulputate.",
+    "projectsDetails": [
+                        {
+                            "productName":"Private Sector",
+                            "productCat":"Project",
+                            "productImg":"/assets/resources/images/projects/private-sector/thumb/thumb-01.jpg"
+                        },
+                        {
+                            "productName":"Private Sector",
+                            "productCat":"Project",
+                            "productImg":"/assets/resources/images/projects/private-sector/thumb/thumb-02.jpg"
+                        },
+                        {
+                            "productName":"Private Sector",
+                            "productCat":"Project",
+                            "productImg":"/assets/resources/images/projects/private-sector/thumb/thumb-03.jpg"
+                        },
+                        {
+                            "productName":"Private Sector",
+                            "productCat":"Project",
+                            "productImg":"/assets/resources/images/projects/private-sector/thumb/thumb-04.jpg"
+                        },
+                        {
+                            "productName":"Private Sector",
+                            "productCat":"Project",
+                            "productImg":"/assets/resources/images/projects/private-sector/thumb/thumb-05.jpg"
+                        },
+                        {
+                            "productName":"Private Sector",
+                            "productCat":"Project",
+                            "productImg":"/assets/resources/images/projects/private-sector/thumb/thumb-06.jpg"
+                        }
+                    ],
+    "category2": "Government Sector Projects",
+    "description2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non urna at neque aliquam molestie. Etiam aliquet felis nec enim tincidunt vulputate.",
+    "projectsDetails2": [
+                        {
+                            "productName":"Private Sector",
+                            "productCat":"Project",
+                            "productImg":"/assets/resources/images/projects/private-sector/thumb/thumb-07.jpg"
+                        },
+                        {
+                            "productName":"Private Sector",
+                            "productCat":"Project",
+                            "productImg":"/assets/resources/images/projects/private-sector/thumb/thumb-08.jpg"
+                        },
+                        {
+                            "productName":"Private Sector",
+                            "productCat":"Project",
+                            "productImg":"/assets/resources/images/projects/private-sector/thumb/thumb-09.jpg"
+                        },
+                        {
+                            "productName":"Private Sector",
+                            "productCat":"Project",
+                            "productImg":"/assets/resources/images/projects/private-sector/thumb/thumb-10.jpg"
+                        },
+                        {
+                            "productName":"Private Sector",
+                            "productCat":"Project",
+                            "productImg":"/assets/resources/images/projects/private-sector/thumb/thumb-11.jpg"
+                        }
+                    ]
+}

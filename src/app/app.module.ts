@@ -1,8 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { ProductService } from './../assets/shared/product.service';
+import { ShortenPipe } from './../assets/shared/shorten.pipe';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +20,7 @@ import { HomeComponent } from './home/home.component';
 import { BannerComponent } from './banner/banner.component';
 import { ClientCounterComponent } from './client-counter/client-counter.component';
 import { OurClientComponent } from './our-client/our-client.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -35,13 +37,16 @@ import { OurClientComponent } from './our-client/our-client.component';
     HomeComponent,
     BannerComponent,
     ClientCounterComponent,
+    ShortenPipe,
     OurClientComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    NgbModule
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]
