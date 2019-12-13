@@ -29,8 +29,10 @@
                         <span class="icon-expand"></span>
                     </a>
                 </div> -->
-                <span>{{product.category}}</span>
-                <h3><a href="#">{{product.name}}</a></h3>
+                <div class="productText">
+                    <span>{{product.category}}</span>
+                    <h3><a href="#">{{product.name}}</a></h3>
+                </div>
             </div>
         </div>
     </div>
@@ -51,8 +53,10 @@
         <div class="row no-gutters1">
             <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of productsList2">
                 <img [src]="product.imagePath" class="img-fluid product-object-fit" alt="{{product.name}}">
-                <span>{{product.category}}</span>
-                <h3><a href="#">{{product.name}}</a></h3>
+                <div class="productText">
+                    <span>{{product.category}}</span>
+                    <h3><a href="#">{{product.name}}</a></h3>
+                </div>
             </div>
         </div>
     </div>
@@ -74,8 +78,10 @@
         <div class="row no-gutters1">
             <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of productsList3">
                 <img [src]="product.imagePath" class="img-fluid product-object-fit" alt="{{product.name}}">
-                <span>{{product.category}}</span>
-                <h3><a href="#">{{product.name}}</a></h3>
+                <div class="productText">
+                    <span>{{product.category}}</span>
+                    <h3><a href="#">{{product.name}}</a></h3>
+                </div>
             </div>
         </div>
     </div>
@@ -97,8 +103,10 @@
         <div class="row no-gutters1">
             <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of productsList4">
                 <img [src]="product.imagePath" class="img-fluid product-object-fit" alt="{{product.name}}">
-                <span>{{product.category}}</span>
-                <h3><a href="#">{{product.name}}</a></h3>
+                <div class="productText">
+                    <span>{{product.category}}</span>
+                    <h3><a href="#">{{product.name}}</a></h3>
+                </div>
             </div>
         </div>
     </div>
