@@ -25,10 +25,23 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.css",
+              "node_modules/aos/dist/aos.css",
+              "node_modules/magnific-popup/dist/magnific-popup.css",
               "src/styles.css",
               "src/assets/resources/css/style.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/popper.js/dist/popper-utils.min.js",
+              "node_modules/aos/src/js/aos.js",
+
+              "node_modules/jquery.stellar/jquery.stellar.js",
+              "node_modules/angular-waypoints/dist/angular-waypoints.all.min.js",
+              "node_modules/magnific-popup/dist/jquery.magnific-popup.min.js",
+              "node_modules/scrollax/scrollax.min.js",
+
+              "src/assets/resources/js/main.js"
+            ]
           },
           "configurations": {
             "production": {
