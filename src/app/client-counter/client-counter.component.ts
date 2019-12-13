@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./client-counter.component.css']
 })
 export class ClientCounterComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit() {
   }
 
-}
+
+}  

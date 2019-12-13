@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
-import { map } from 'rxjs/operators';
+import { ProductService } from './../../assets/shared/product.service';
+import { ProductModel } from './../../assets/shared/product.model';
 
 @Component({
   selector: 'app-products',
@@ -9,15 +10,17 @@ import { map } from 'rxjs/operators';
 })
 export class ProductsComponent implements OnInit { 
 
-  constructor(private httpService: HttpClient) { }
+  constructor(private httpService: HttpClient, private productService: ProductService) { }
 
   configUrl = '../../assets/content/products.json';
   productsContent = [];
-  productUrl = '../../../assets/content/products-list.json';
-  productsList ;
+  productsList;
+  productsList1: ProductModel[];
+  productsList2: ProductModel[];
+  productsList3: ProductModel[];
+  productsList4: ProductModel[];
   colorName;
   regionName;
-  selectedColor;
 
   ngOnInit() {
     this.httpService.get(this.configUrl).subscribe(
@@ -27,31 +30,29 @@ export class ProductsComponent implements OnInit {
       (err: HttpErrorResponse) => {
         console.log (err.message);
       }
-    );
+    );   
 
-  this.httpService.get(this.productUrl).subscribe(
-    productData => {
-      this.productsList = productData;
-      this.colorName = new Set(this.productsList.map(x => x.colorName).sort());
-      this.regionName = new Set(this.productsList.map(x => x.regionName).sort());
-    },
-    (err: HttpErrorResponse) => {
-      console.log (err.message);
-    }
-  );
+    this.productsList1 = this.productService.getProduct1();
+    this.productsList2 = this.productService.getProduct2();
+    this.productsList3 = this.productService.getProduct3();
+    this.productsList4 = this.productService.getProduct4();
 
+    this.productsList = this.productsList1.concat(this.productsList2, this.productsList3, this.productsList4)
+
+    this.colorName = new Set(this.productsList.map(x => x.colorName).sort());
+    this.regionName = new Set(this.productsList.map(x => x.regionName).sort());
   }
 
 
-  onSelect(selectedColor) {  
-    selectedColor = null;
-    for (var i = 0; i < this.colorName.length; i++)
-    {
-      if (this.selectedColor[i] == this.colorName) {
-        this.selectedColor = this.selectedColor[i];
-      }
-    }
-    console.log(selectedColor);
-}
+//   onSelect(selectedColor) {  
+//     selectedColor = null;
+//     for (var i = 0; i < this.colorName.length; i++)
+//     {
+//       if (this.selectedColor[i] == this.colorName) {
+//         this.selectedColor = this.selectedColor[i];
+//       }
+//     }
+//     console.log(selectedColor);
+// }
 
 }
