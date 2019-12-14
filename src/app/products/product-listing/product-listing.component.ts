@@ -38,11 +38,12 @@ export class ProductListingComponent implements OnInit {
         console.log (err.message);
       }
     );
-    
   this.productsList1 = this.productService.getProduct1();
   this.productsList2 = this.productService.getProduct2();
   this.productsList3 = this.productService.getProduct3();
   this.productsList4 = this.productService.getProduct4();
+
+
   };
 
  

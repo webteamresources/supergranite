@@ -18,10 +18,16 @@ export class ContactComponent implements OnInit {
       'lname' : new FormControl(null, Validators.required),
       'subject' : new FormControl(null),
       'message' : new FormControl(null, Validators.required),
+      //'hobbies' : new FormArray([])
     });
   }
 
   onSubmit() {
     console.log(this.signupForm);
   }
+
+  // onAddHobby() {
+  //   const control = new FormControl(null, Validators.required);
+  //   (<FormArray>this.signupForm.get('hobbies')).push(control);
+  // }
 }

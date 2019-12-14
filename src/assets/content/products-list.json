@@ -1,86 +1,60 @@
-[
-    {
-        "name":"test 1",
-        "category":"Granites",
-        "colorName":"Red",
-        "regionName":"Norway",
-        "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg"            
-    },
-    {
-        "name":"test 2",
-        "category":"Granites",
-        "colorName":"Red",
-        "regionName":"Norway",
-        "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg"            
-    },
-    {
-        "name":"test 3",
-        "category":"Granites",
-        "colorName":"Red",
-        "regionName":"Norway",
-        "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg"            
-    },
-    {
-        "name":"Manglore Granite",
-        "category":"Marbles",
-        "colorName":"Blue",
-        "regionName":"North India",
-        "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg"            
-    },
-    {
-        "name":"Chennai Granite",
-        "category":"Marbles",
-        "colorName":"Blue",
-        "regionName":"North India",
-        "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg"            
-    },
-    {
-        "name":"Rajasthan Granite",
-        "category":"Marbles",
-        "colorName":"Blue",
-        "regionName":"North India",
-        "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg"            
-    },
-    {
-        "name":"Manglore Granite",
-        "category":"Engineering Stone",
-        "colorName":"Brown",
-        "regionName":"South India",
-        "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg"            
-    },
-    {
-        "name":"Chennai Granite",
-        "category":"Engineering Stone",
-        "colorName":"Brown",
-        "regionName":"South India",
-        "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg"            
-    },
-    {
-        "name":"Rajasthan Granite",
-        "category":"Engineering Stone",
-        "colorName":"Brown",
-        "regionName":"South India",
-        "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg"            
-    },
-    {
-        "name":"Manglore Granite",
-        "category":"Peeble & Cobble",
-        "colorName":"Orange",
-        "regionName":"Brazil",
-        "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg"            
-    },
-    {
-        "name":"Chennai Granite",
-        "category":"Peeble & Cobble",
-        "colorName":"Orange",
-        "regionName":"Brazil",
-        "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg"            
-    },
-    {
-        "name":"Rajasthan Granite",
-        "category":"Peeble & Cobble",
-        "colorName":"Orange",
-        "regionName":"Brazil",
-        "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg"            
-    }
-]
+{
+    "productList1": [
+        {"name":"Chocolate Pearl Granite", "category":"Granites",  "colorName":"Chocolate", "regionName":"Brazil", "imagePath":"/assets/resources/images/products/granites/Brazil/Chocolate-Pearl-Granite.jpg" },
+        {"name":"Labradorite Granite", "category":"Granites",  "colorName":"Red", "regionName":"Brazil", "imagePath":"/assets/resources/images/products/granites/Brazil/Labradorite-Granite.jpg" },
+        {"name":"Lemurian Blue Granite", "category":"Granites",  "colorName":"Blue", "regionName":"Brazil", "imagePath":"/assets/resources/images/products/granites/Brazil/Lemurian-Blue-Granite.jpg" },
+        {"name":"Volga Blue Granite", "category":"Granites",  "colorName":"Blue", "regionName":"Brazil" , "imagePath":"/assets/resources/images/products/granites/Brazil/Volga-Blue-Granite.jpg" },
+        {"name":"Apple Green Granite ", "category":"Granites",  "colorName":"Apple Green", "regionName":"North India" , "imagePath":"/assets/resources/images/products/granites/North-Indian-Granites/Apple-Green-Granite.jpg" },
+        {"name":"Bala Flower Granite", "category":"Granites",  "colorName":"Red", "regionName":"North India" , "imagePath":"/assets/resources/images/products/granites/North-Indian-Granites/Bala-Flower-Granite.jpg" },
+        {"name":"Brown Pearl Granite", "category":"Granites",  "colorName":"Brown", "regionName":"North India" , "imagePath":"/assets/resources/images/products/granites/North-Indian-Granites/Brown-Pearl-Granite.jpg" },
+        {"name":"Caliber Brown Granite", "category":"Granites",  "colorName":"Brown", "regionName":"North India" , "imagePath":"/assets/resources/images/products/granites/North-Indian-Granites/Caliber-Brown-Granite.jpg" },
+        {"name":"Cherry Brown Granite ", "category":"Granites",  "colorName":"Apple Green", "regionName":"North India" , "imagePath":"/assets/resources/images/products/granites/North-Indian-Granites/Cherry-Brown-Granite.jpg" },
+        {"name":"Fish Brown Granite ", "category":"Granites",  "colorName":"Brown", "regionName":"North India" , "imagePath":"/assets/resources/images/products/granites/North-Indian-Granites/Fish-Brown-Granite.jpg"},
+        {"name":"French Brown Granite", "category":"Granites",  "colorName":"Black", "regionName":"South India" , "imagePath":"/assets/resources/images/products/granites/North-Indian-Granites/French-Brown-Granite.jpg" },
+        {"name":"G D Brown Granite", "category":"Granites",  "colorName":"Brown", "regionName":"North India" , "imagePath":"/assets/resources/images/products/granites/North-Indian-Granites/G-D-Brown-Granite.jpg"},
+        {"name":"Green Pearl Granite ", "category":"Granites",  "colorName":"Green", "regionName":"North India" , "imagePath":"/assets/resources/images/products/granites/North-Indian-Granites/Green-Pearl-Granite.jpg"},
+        {"name":"Honey Brown Granite", "category":"Granites",  "colorName":"Brown", "regionName":"North India" , "imagePath":"/assets/resources/images/products/granites/North-Indian-Granites/Honey-Brown-Granite.jpg" }
+    ],
+    "productList2":[
+        { "name":"test 1",  "category":"Granites", "colorName":"Red", "regionName":"Norway", "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg" },
+        { "name":"test 2", "category":"Granites", "colorName":"Red", "regionName":"Norway", "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg" },
+        { "name":"test 3", "category":"Granites", "colorName":"Red", "regionName":"Norway", "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg" },
+        { "name":"Manglore Granite", "category":"Marbles", "colorName":"Blue", "regionName":"North India", "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg"},
+        { "name":"Chennai Granite", "category":"Marbles", "colorName":"Blue", "regionName":"North India", "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg"},
+        { "name":"Rajasthan Granite", "category":"Marbles", "colorName":"Blue", "regionName":"North India", "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg"},
+        { "name":"Manglore Granite", "category":"Engineering Stone", "colorName":"Brown", "regionName":"South India", "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg" },
+        { "name":"Chennai Granite", "category":"Engineering Stone", "colorName":"Brown", "regionName":"South India", "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg" },
+        { "name":"Rajasthan Granite", "category":"Engineering Stone", "colorName":"Brown", "regionName":"South India", "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg" },
+        { "name":"Manglore Granite", "category":"Peeble & Cobble", "colorName":"Apple Green", "regionName":"Brazil", "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg" },
+        { "name":"Chennai Granite", "category":"Peeble & Cobble", "colorName":"Orange", "regionName":"Brazil", "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg" },
+        { "name":"Rajasthan Granite", "category":"Peeble & Cobble", "colorName":"Orange", "regionName":"Brazil", "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg" }
+    ],
+    "productList3":[
+        { "name":"test 1",  "category":"Granites", "colorName":"Red", "regionName":"Norway", "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg" },
+        { "name":"test 2", "category":"Granites", "colorName":"Red", "regionName":"Norway", "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg" },
+        { "name":"test 3", "category":"Granites", "colorName":"Red", "regionName":"Norway", "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg" },
+        { "name":"Manglore Granite", "category":"Marbles", "colorName":"Blue", "regionName":"North India", "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg"},
+        { "name":"Chennai Granite", "category":"Marbles", "colorName":"Blue", "regionName":"North India", "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg"},
+        { "name":"Rajasthan Granite", "category":"Marbles", "colorName":"Blue", "regionName":"North India", "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg"},
+        { "name":"Manglore Granite", "category":"Engineering Stone", "colorName":"Brown", "regionName":"South India", "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg" },
+        { "name":"Chennai Granite", "category":"Engineering Stone", "colorName":"Brown", "regionName":"South India", "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg" },
+        { "name":"Rajasthan Granite", "category":"Engineering Stone", "colorName":"Brown", "regionName":"South India", "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg" },
+        { "name":"Manglore Granite", "category":"Peeble & Cobble", "colorName":"Orange", "regionName":"Brazil", "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg" },
+        { "name":"Chennai Granite", "category":"Peeble & Cobble", "colorName":"Orange", "regionName":"Brazil", "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg" },
+        { "name":"Rajasthan Granite", "category":"Peeble & Cobble", "colorName":"Orange", "regionName":"Brazil", "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg" }
+    ],
+    "productList4":[
+        { "name":"test 1",  "category":"Granites", "colorName":"Red", "regionName":"Norway", "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg" },
+        { "name":"test 2", "category":"Granites", "colorName":"Red", "regionName":"Norway", "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg" },
+        { "name":"test 3", "category":"Granites", "colorName":"Red", "regionName":"Norway", "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg" },
+        { "name":"Manglore Granite", "category":"Marbles", "colorName":"Blue", "regionName":"North India", "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg"},
+        { "name":"Chennai Granite", "category":"Marbles", "colorName":"Blue", "regionName":"North India", "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg"},
+        { "name":"Rajasthan Granite", "category":"Marbles", "colorName":"Blue", "regionName":"North India", "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg"},
+        { "name":"Manglore Granite", "category":"Engineering Stone", "colorName":"Brown", "regionName":"South India", "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg" },
+        { "name":"Chennai Granite", "category":"Engineering Stone", "colorName":"Brown", "regionName":"South India", "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg" },
+        { "name":"Rajasthan Granite", "category":"Engineering Stone", "colorName":"Brown", "regionName":"South India", "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg" },
+        { "name":"Manglore Granite", "category":"Peeble & Cobble", "colorName":"Orange", "regionName":"Brazil", "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg" },
+        { "name":"Chennai Granite", "category":"Peeble & Cobble", "colorName":"Apple Green", "regionName":"Brazil", "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg" },
+        { "name":"Rajasthan Granite", "category":"Peeble & Cobble", "colorName":"Orange", "regionName":"Brazil", "imagePath":"/assets/resources/images/products/granite-products/granite-blocks.jpg" }
+    ]
+}
