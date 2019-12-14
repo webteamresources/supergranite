@@ -18,20 +18,22 @@
     <div class="container">
         <div class="row no-gutters1">
             <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of productsList1">
-                <img [src]="product.imagePath" class="img-fluid product-object-fit" alt="{{product.name}}">
-                <!-- <div class="project">
-                    <img [src]="product.imagePath" class="img-fluid" alt="{{product.name}}">
-                    <div class="text">
-                        <span>{{prodCont.productCat}}</span>
+                <div class=" project">
+                    <img [src]="product.imagePath" class="img-fluid product-object-fit" alt="{{product.name}}">
+                    <!-- <div class="project">
+                        <img [src]="product.imagePath" class="img-fluid" alt="{{product.name}}">
+                        <div class="text">
+                            <span>{{prodCont.productCat}}</span>
+                            <h3><a href="#">{{product.name}}</a></h3>
+                        </div>
+                        <a href="#" class="icon d-flex justify-content-center align-items-center">
+                            <span class="icon-expand"></span>
+                        </a>
+                    </div> -->
+                    <div class="productText">
+                        <span>{{product.category}}</span> <span> - {{product.colorName}}</span>
                         <h3><a href="#">{{product.name}}</a></h3>
                     </div>
-                    <a href="#" class="icon d-flex justify-content-center align-items-center">
-                        <span class="icon-expand"></span>
-                    </a>
-                </div> -->
-                <div class="productText">
-                    <span>{{product.category}}</span>
-                    <h3><a href="#">{{product.name}}</a></h3>
                 </div>
             </div>
         </div>
@@ -41,7 +43,7 @@
     <div class="container">
         <div class="row justify-content-start mb-5 pb-2">
             <div class="col-md-4 heading-section">
-                <span class="subheading subheading-with-line"><small class="pr-2 bg-light">{{ productsContent2.pgTitle }}</small></span>
+                <span class="subheading subheading-with-line"><small class="pr-2 bg-light">{{ productsContent.pgTitle }}</small></span>
                 <h2 class="mb-4">{{productsContent2.productCat}}</h2>
             </div>
             <div class="col-md-8 pl-md-5 heading-section">
@@ -52,10 +54,12 @@
     <div class="container">
         <div class="row no-gutters1">
             <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of productsList2">
-                <img [src]="product.imagePath" class="img-fluid product-object-fit" alt="{{product.name}}">
-                <div class="productText">
-                    <span>{{product.category}}</span>
-                    <h3><a href="#">{{product.name}}</a></h3>
+                <div class=" project">
+                    <img [src]="product.imagePath" class="img-fluid product-object-fit" alt="{{product.name}}">
+                    <div class="productText">
+                        <span>{{product.category}}</span> <span> - {{product.colorName}}</span>
+                        <h3><a href="#">{{product.name}}</a></h3>
+                    </div>
                 </div>
             </div>
         </div>
@@ -66,7 +70,7 @@
     <div class="container">
         <div class="row justify-content-start mb-5 pb-2">
             <div class="col-md-4 heading-section">
-                <span class="subheading subheading-with-line"><small class="pr-2 bg-light">{{ productsContent3.pgTitle }}</small></span>
+                <span class="subheading subheading-with-line"><small class="pr-2 bg-light">{{ productsContent.pgTitle }}</small></span>
                 <h2 class="mb-4">{{productsContent3.productCat}}</h2>
             </div>
             <div class="col-md-8 pl-md-5 heading-section">
@@ -77,10 +81,12 @@
     <div class="container">
         <div class="row no-gutters1">
             <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of productsList3">
-                <img [src]="product.imagePath" class="img-fluid product-object-fit" alt="{{product.name}}">
-                <div class="productText">
-                    <span>{{product.category}}</span>
-                    <h3><a href="#">{{product.name}}</a></h3>
+                <div class=" project">
+                    <img [src]="product.imagePath" class="img-fluid product-object-fit" alt="{{product.name}}">
+                    <div class="productText">
+                        <span>{{product.category}}</span> <span> - {{product.colorName}}</span>
+                        <h3><a href="#">{{product.name}}</a></h3>
+                    </div>
                 </div>
             </div>
         </div>
@@ -91,7 +97,7 @@
     <div class="container">
         <div class="row justify-content-start mb-5 pb-2">
             <div class="col-md-4 heading-section">
-                <span class="subheading subheading-with-line"><small class="pr-2 bg-light">{{ productsContent4.pgTitle }}</small></span>
+                <span class="subheading subheading-with-line"><small class="pr-2 bg-light">{{ productsContent.pgTitle }}</small></span>
                 <h2 class="mb-4">{{productsContent4.productCat}}</h2>
             </div>
             <div class="col-md-8 pl-md-5 heading-section">
@@ -102,10 +108,12 @@
     <div class="container">
         <div class="row no-gutters1">
             <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of productsList4">
-                <img [src]="product.imagePath" class="img-fluid product-object-fit" alt="{{product.name}}">
-                <div class="productText">
-                    <span>{{product.category}}</span>
-                    <h3><a href="#">{{product.name}}</a></h3>
+                <div class=" project">
+                    <img [src]="product.imagePath" class="img-fluid product-object-fit" alt="{{product.name}}">
+                    <div class="productText">
+                        <span>{{product.category}}</span> <span> - {{product.colorName}}</span>
+                        <h3><a href="#">{{product.name}}</a></h3>
+                    </div>
                 </div>
             </div>
         </div>
