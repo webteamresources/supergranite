@@ -4,7 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { ProductService } from './../assets/shared/product.service';
 import { ShortenPipe } from './../assets/shared/shorten.pipe';
-import { CarouselModule } from 'ngx-owl-carousel-o';
+import { OwlModule } from 'ngx-owl-carousel';
 import 'jquery';
 import 'popper.js';
 import 'bootstrap';
@@ -51,7 +51,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FormsModule,
     ReactiveFormsModule,
     NgbModule,
-    CarouselModule 
+    OwlModule 
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]
