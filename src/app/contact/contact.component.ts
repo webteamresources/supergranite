@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
@@ -9,8 +10,8 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 export class ContactComponent implements OnInit {
 
   signupForm: FormGroup;
-  
-  constructor() { }
+  formUrl = '../../assets/contact.php';
+  constructor(private httpService: HttpClient) { }
 
   ngOnInit() {
     this.signupForm = new FormGroup ({
@@ -23,6 +24,11 @@ export class ContactComponent implements OnInit {
   }
 
   onSubmit() {
+    this.httpService.post<any>(this.formUrl, this.signupForm).subscribe(
+      (res) => console.log(res),
+      (err) => console.log(err)
+      );
+      
     console.log(this.signupForm);
   }
 

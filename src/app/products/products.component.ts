@@ -21,6 +21,7 @@ export class ProductsComponent implements OnInit {
   productsList4: ProductModel[];
   colorName;
   regionName;
+  pgTitle = "Products";
 
   ngOnInit() {
     this.httpService.get(this.configUrl).subscribe(

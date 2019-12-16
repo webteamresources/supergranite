@@ -1,7 +1,4 @@
 {   
-    "pgTitle":"Projects",
-    "category": "Private Sector Projects",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non urna at neque aliquam molestie. Etiam aliquet felis nec enim tincidunt vulputate.",
     "projectsDetails": [
                         {
                             "productName":"Private Sector",
@@ -34,8 +31,6 @@
                             "productImg":"/assets/resources/images/projects/private-sector/thumb/thumb-06.jpg"
                         }
                     ],
-    "category2": "Government Sector Projects",
-    "description2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non urna at neque aliquam molestie. Etiam aliquet felis nec enim tincidunt vulputate.",
     "projectsDetails2": [
                         {
                             "productName":"Private Sector",
