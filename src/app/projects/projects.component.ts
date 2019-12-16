@@ -13,7 +13,13 @@ export class ProjectsComponent implements OnInit {
   projectsContent = [];
   projectsDetails = [];
   projectsDetails2 = [];
-  ngOnInit() {    
+  pgTitle = "Projects";
+  category = "Private Sector Projects"; 
+  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non urna at neque aliquam molestie. Etiam aliquet felis nec enim tincidunt vulputate.";
+  category2 = "Government Sector Projects";
+  description2 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non urna at neque aliquam molestie. Etiam aliquet felis nec enim tincidunt vulputate.";
+
+ngOnInit() {    
     this.httpService.get(this.configUrl).subscribe(
       data => {
         this.projectsContent = data as string [];
