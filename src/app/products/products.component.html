@@ -4,15 +4,26 @@
     <div class="row no-gutters slider-text align-items-center justify-content-center">
       <div class="col-md-9 text-center">
         <h1 class="mb-2 bread">{{ pgTitle }}</h1>
-        <p class="breadcrumbs"><span class="mr-2"><a routerLink="/home">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>{{pgTitle}} <i class="ion-ios-arrow-forward"></i></span></p>
+        <p class="breadcrumbs"><span class="mr-2"><a routerLink="/home">Home ></a></span> <span>{{pgTitle}} ></span></p>
       </div>
     </div>
   </div>
 </section>
 <section class="pt-5 pb-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="btn-group" role="group">
+                <a role="button" routerLink="../products/granites" routerLinkActive="active" class="btn btn-outline-primary">Granites</a>
+                <a role="button" routerLink="../products/marbles" routerLinkActive="active" class="btn btn-outline-primary">Marbles</a>
+                <a role="button" routerLink="../products/engineering-stone" routerLinkActive="active" class="btn btn-outline-primary">Engineering Stone</a>
+                <a role="button" routerLink="../products/pebble-and-cobble" routerLinkActive="active" class="btn btn-outline-primary">Pebble and Cobble</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="pt-5 pb-5">
   <div class="container">
       <div class="row justify-content-start">
-          <div class="col-xl-12 clearfix"><h2>Filter: </h2></div>
           <div class="col-xl-6 col-md-4 form-group">
               <label for="colorSpecific">Color Specific</label>
               <select class="form-control default" id="colorSpecific" name="colorSpecific">

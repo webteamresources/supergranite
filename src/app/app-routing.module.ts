@@ -12,12 +12,20 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
 import { DisclaimerComponent } from './disclaimer/disclaimer.component';
 import { FaqComponent } from './faq/faq.component';
 import { CareerComponent } from './career/career.component';
+import { MarblesComponent } from './products/marbles/marbles.component';
+import { PebbleCobbleComponent } from './products/peeble-and-cobble/pebble-cobble.component';
+import { EngineeringStoneComponent } from './products/engineering-stone/engineering-stone.component';
+import { GranitesComponent } from './products/granites/granites.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'/home', pathMatch:'full'},
   {path:'home', component:HomeComponent},
   {path:'about', component:AboutComponent},
   {path:'products', component:ProductsComponent},
+  {path:'products/granites', component:GranitesComponent},
+  {path:'products/marbles', component:MarblesComponent},
+  {path:'products/engineering-stone', component:EngineeringStoneComponent},
+  {path:'products/pebble-and-cobble', component:PebbleCobbleComponent},
   {path:'products-listing', component:ProductListingComponent},
   {path:'products-details', component:ProductDetailsComponent},
   {path:'projects', component:ProjectsComponent},

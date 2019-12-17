@@ -30,6 +30,10 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
 import { DisclaimerComponent } from './disclaimer/disclaimer.component';
 import { FaqComponent } from './faq/faq.component';
 import { CareerComponent } from './career/career.component';
+import { MarblesComponent } from './products/marbles/marbles.component';
+import { GranitesComponent } from './products/granites/granites.component';
+import { PebbleCobbleComponent } from './products/peeble-and-cobble/pebble-cobble.component';
+import { EngineeringStoneComponent } from './products/engineering-stone/engineering-stone.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +55,11 @@ import { CareerComponent } from './career/career.component';
     PrivacyPolicyComponent,
     DisclaimerComponent,
     FaqComponent,
-    CareerComponent
+    CareerComponent,
+    GranitesComponent,
+    MarblesComponent,
+    EngineeringStoneComponent,
+    PebbleCobbleComponent
   ],
   imports: [
     BrowserModule,

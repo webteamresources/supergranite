@@ -22,19 +22,15 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>    
     <div class="container">
         <div class="row no-gutters1">
-            <div class="col-md-6 col-lg-4" *ngFor="let project of projectsDetails">
-                <div class="project">
-                    <img [src]="project.productImg" class="img-fluid" [alt]="project.productName">
-                        <div class="text">
-                            <span></span>
-                            <h3>{{project.productName}}</h3>
-                        </div>
-                        <!-- <a href="../../assets/resources/images/projects/private-sector/large/large-01.jpg" alt="Private Sector" class="icon image-popup d-flex justify-content-center align-items-center">
-                        <span class="icon-expand"></span> 
-                    </a>-->
+            <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let project of projectsDetails">
+                <div class=" project">
+                    <img [src]="project.productImg" class="img-fluid product-object-fit" alt="{{project.workName}}">
+                    <div class="productText">
+                        <h3><a href="#">{{project.workName}}</a></h3>
+                    </div>
                 </div>
             </div>
         </div>
@@ -54,18 +50,15 @@
             </div>
         </div>
     </div>
+    
     <div class="container">
         <div class="row no-gutters1">
-            <div class="col-md-6 col-lg-4" *ngFor="let project of projectsDetails2">
-                <div class="project">
-                    <img [src]="project.productImg" class="img-fluid" [alt]="project.productName">
-                        <div class="text">
-                            <span></span>
-                            <h3>{{project.productName}}</h3>
-                        </div>
-                        <!-- <a href="../../assets/resources/images/projects/private-sector/large/large-01.jpg" alt="Private Sector" class="icon image-popup d-flex justify-content-center align-items-center">
-                        <span class="icon-expand"></span> 
-                    </a>-->
+            <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let project of projectsDetails2">
+                <div class=" project">
+                    <img [src]="project.productImg" class="img-fluid product-object-fit" alt="{{project.workName}}">
+                    <div class="productText">
+                        <h3><a href="#">{{project.workName}}</a></h3>
+                    </div>
                 </div>
             </div>
         </div>
