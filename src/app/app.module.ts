@@ -1,10 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { ProductService } from './../assets/shared/product.service';
 import { ShortenPipe } from './../assets/shared/shorten.pipe';
-import { OwlModule } from 'ngx-owl-carousel';
+import { CarouselModule  } from 'ngx-owl-carousel-o';
 import 'jquery';
 import 'popper.js';
 import 'bootstrap';
@@ -46,12 +47,13 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
     NgbModule,
-    OwlModule 
+    CarouselModule    
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]

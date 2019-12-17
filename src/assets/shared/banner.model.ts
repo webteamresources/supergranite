@@ -1,5 +1,4 @@
 export class BannerModel {
-    public id:number;
     public src:String;
     public title:String;
     public alt:String;
@@ -9,8 +8,7 @@ export class BannerModel {
     public link:String;
 
 
-    constructor(id: string, src:string, title:string, alt:string, SinceTxt:string, bannerTL:String, data:String, link:string){
-        this.id = name;
+    constructor(src:string, title:string, alt:string, SinceTxt:string, bannerTL:String, data:String, link:string){
         this.src = src;
         this.title = title;
         this.alt = alt;

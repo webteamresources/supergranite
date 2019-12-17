@@ -4,7 +4,7 @@ export class TestimonialModel {
     public testimonialAuthorPost:String;
 
 
-    constructor(testimonialTxt: string, testimonialAuthor:string, testimonialAuthorPost:string){
+    constructor( testimonialTxt: string, testimonialAuthor:string, testimonialAuthorPost:string){
         this.testimonialTxt = testimonialTxt;
         this.testimonialAuthor = testimonialAuthor;
         this.testimonialAuthorPost = testimonialAuthorPost;
