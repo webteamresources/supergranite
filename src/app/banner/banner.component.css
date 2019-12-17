@@ -1,5 +1,5 @@
 img { max-width: 100%;} 
-.container { height:100%; overflow: hidden; max-width: 70%; /*background: rgba(0,0,0,0.5);*/} 
+.container { height:100%; max-width: 70%; /* overflow: hidden; background: rgba(0,0,0,0.5);*/} 
 .img-container { position: absolute; left: 0; opacity: 0; height: auto !important; background-size: cover; background-position: center; will-change: opacity; transition: opacity .3s; cursor: pointer;} 
 .slide-button:hover, .slide-button-select { width: 64px !important; background-color: rgba(255,255,255,1) !important; pointer-events: none; transition: background-color .4s, width 4s cubic-bezier(0.190, 1.000, 0.220, 1.000) !important;} 
 .slide-button { width: 30px; height: 10px; background-color: rgba(255,255,255,.5); cursor: pointer; position: absolute; } 
@@ -10,4 +10,8 @@ img { max-width: 100%;}
 .page-text { min-height: 373px; width: 50%; height: 100%; opacity: 0; font-weight: 300; font-size: 90px; color: white;} 
 .selected { opacity: 1; transition: 1s;}
 .carousel-control-prev-icon, .carousel-control-next-icon { width: 50px; height: 50px; background-color:rgba(0,0,0,0.5);  }
+
+.home-slider .owl-nav { position: static; width: auto; top: auto; }
+.home-slider .owl-nav .owl-prev, .home-slider .owl-nav .owl-next { left: 0 !important; margin: 0 !important; top: 0; bottom: 0; width: 15%; transform: none; transition: none; opacity: 1; }
+.home-slider .owl-nav .owl-next { right: 0 !important; }
   

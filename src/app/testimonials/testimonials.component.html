@@ -10,22 +10,21 @@
 
         <div class="row ">
             <div class="col-md-12">
-                <owl-carousel
-                    [options]="{items: 3, dots: false, navigation: false}"
-                    [items]="images"
-                    [carouselClasses]="['owl-theme', 'row', 'sliding', 'carousel-testimony', 'owl-carousel']">
-                    <div class="item" *ngFor="let image of images;let i = index">
-                        <div class="testimony-wrap p-4 pb-5">
-                            <div class="text">
-                                <p class="mb-5 pl-4 line">{{image.testimonialTxt}}</p>
-                                <div class="pl-5">
-                                    <p class="name">{{image.testimonialAuthor}}</p>
-                                    <span class="position">{{image.testimonialAuthorPost}}</span>
+                <owl-carousel-o [options]="customOptions">
+                    <ng-container *ngFor="let image of images;let i = index">
+                        <ng-template carouselSlide [id]="i">
+                            <div class="testimony-wrap p-4 pb-5">
+                                <div class="text">
+                                    <p class="mb-5 pl-4 line">{{image.testimonialTxt}}</p>
+                                    <div class="pl-5">
+                                        <p class="name">{{image.testimonialAuthor}}</p>
+                                        <span class="position">{{image.testimonialAuthorPost}}</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </owl-carousel>
+                        </ng-template>
+                    </ng-container>
+                </owl-carousel-o>
             </div>
         </div>
     </div>

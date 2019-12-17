@@ -4,3 +4,4 @@
 @import "~owl.carousel/dist/assets/owl.theme.default.css";
 
 input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched { border-color:#ff0000; }
+.testimony-section .owl-dots .owl-dot > span, .home-slider .owl-dots .owl-dot > span { display: none; }
