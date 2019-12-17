@@ -1,0 +1,29 @@
+<section class="hero-wrap hero-wrap-2" style="background-image: url(/assets/resources/images/bg_1.jpg);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text align-items-center justify-content-center">
+        <div class="col-md-9 text-center">
+          <h1 class="mb-2 bread">{{pgTitle}}</h1>
+          <p class="breadcrumbs"><span class="mr-2"><a routerLink="/home">Home ></a></span> <span>{{pgTitle}} ></span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About -->       
+  <section class="ftco-section ftc-no-pb" >
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col-md-12">
+                <div class="pl-md-5 ml-md-5 mb-5">
+                    <ngb-accordion #acc="ngbAccordion">
+                        <ngb-panel [title]="faq.title" [id]="i" *ngFor="let faq of faqList; let i = index">
+                            <ng-template ngbPanelContent>
+                                {{faq.content}}
+                            </ng-template>
+                        </ngb-panel>
+                    </ngb-accordion>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

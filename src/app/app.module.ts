@@ -25,6 +25,10 @@ import { BannerComponent } from './banner/banner.component';
 import { ClientCounterComponent } from './client-counter/client-counter.component';
 import { OurClientComponent } from './our-client/our-client.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { DisclaimerComponent } from './disclaimer/disclaimer.component';
+import { FaqComponent } from './faq/faq.component';
+import { CareerComponent } from './career/career.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +46,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BannerComponent,
     ClientCounterComponent,
     ShortenPipe,
-    OurClientComponent
+    OurClientComponent,
+    PrivacyPolicyComponent,
+    DisclaimerComponent,
+    FaqComponent,
+    CareerComponent
   ],
   imports: [
     BrowserModule,

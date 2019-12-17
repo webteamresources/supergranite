@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
@@ -10,9 +9,8 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 export class ContactComponent implements OnInit {
 
   signupForm: FormGroup;
-  formUrl = '../../assets/contact.php';
-  constructor(private httpService: HttpClient) { }
-
+  constructor() { }
+  pgTitle = 'Contact';
   ngOnInit() {
     this.signupForm = new FormGroup ({
       'fname' : new FormControl(null, Validators.required),
@@ -22,15 +20,18 @@ export class ContactComponent implements OnInit {
       //'hobbies' : new FormArray([])
     });
   }
-
-  onSubmit() {
-    this.httpService.post<any>(this.formUrl, this.signupForm).subscribe(
-      (res) => console.log(res),
-      (err) => console.log(err)
-      );
-      
-    console.log(this.signupForm);
+  onSubmit() {   
+    const formData = this.signupForm.value;
+    console.log(formData);
   }
+  // onSubmit() {
+  //   this.httpService.post<any>(this.formUrl, this.signupForm).subscribe(
+  //     (res) => console.log(res),
+  //     (err) => console.log(err)
+  //     );
+      
+  //   console.log(this.signupForm);
+  // }
 
   // onAddHobby() {
   //   const control = new FormControl(null, Validators.required);

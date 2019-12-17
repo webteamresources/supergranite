@@ -1,13 +1,15 @@
 <?php
+$json = file_get_contents('php://input');
+$data = json_decode($json);
 // an email address that will be in the From field of the email.
-$from = 'contact@supergranitesandmarbles.com, girish.surana@supergranitesandmarbles.com, prashant.shetty@supergranitesandmarbles.com';
+$from = 'ramchat007@gmail.com';
 // an email address that will receive the email with the output of the form
 $sendTo = 'ramchat007@gmail.com';
 // subject of the email
 $subject = 'New message from contact form';
 // form field names and their translations.
 // array variable name => Text to appear in the email
-$fields = array('fname' => 'First Name', 'lname' => 'Last Name', 'phone' => 'Phone Number', 'email' => 'Email', 'message' => 'Message'); 
+$fields = $data('fname' => 'First Name', 'lname' => 'Last Name', 'subject' => 'Subject', 'message' => 'Message'); 
 // message that will be displayed when everything is OK :)
 $okMessage = 'Contact form successfully submitted. Thank you, We will get back to you soon!';
 // If something goes wrong, we will display this message.
