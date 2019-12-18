@@ -3358,3 +3358,24 @@ border-image:none;border-left:0 none;border-right:0 none;border-top:0 none;float
 @media (max-width: 767.98px) { 
 .about-image { height: 400px; margin-bottom: 30px; } 
 }
+@media screen and  (max-width:599px){ 
+body { font-size:0.85rem; }
+.home-slider .slider-item .slider-text .text {  padding:1.5rem;  }
+.home-slider .slider-item .slider-text h1 { font-size:1.65rem; line-height: 2rem;}
+.heading-section h2 { font-size: 1.25rem; }
+.mb-5, .my-5 { margin-bottom: 1rem !important; }
+.ftco-section { padding: 1em 0;}
+.heading-section h2 { margin-bottom: 0.75rem !important; }
+.pb-5, .py-5 { padding-bottom: 1.5rem !important;}
+.testimony-wrap { padding-top:0 !important; }
+.product-object-fit { min-height: 200px; max-height: 200px; }
+.productText h3 { font-size: 1.15rem; }
+.productText h3:last-child { margin-bottom: 0; }
+p { margin-bottom: 0.5rem;}
+.ftco-footer { font-size: 0.75rem; }
+.ftco-footer .ftco-footer-widget h2 { margin-bottom:0.25rem; }
+.ftco-footer-widget { text-align:center; }
+.navbar-brand > img { max-width:175px; }
+.ftco-counter .text strong.number { font-size: 1.5rem; }
+.ftco-counter .text span { font-size: 1.1rem; }
+}
