@@ -1,7 +1,4 @@
 import { Component } from '@angular/core';
-
-import { AboutPageModel } from './../../assets/shared/about-page.model';
-
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',

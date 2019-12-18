@@ -26,6 +26,14 @@ import { BannerComponent } from './banner/banner.component';
 import { ClientCounterComponent } from './client-counter/client-counter.component';
 import { OurClientComponent } from './our-client/our-client.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { DisclaimerComponent } from './disclaimer/disclaimer.component';
+import { FaqComponent } from './faq/faq.component';
+import { CareerComponent } from './career/career.component';
+import { MarblesComponent } from './products/marbles/marbles.component';
+import { GranitesComponent } from './products/granites/granites.component';
+import { PebbleCobbleComponent } from './products/peeble-and-cobble/pebble-cobble.component';
+import { EngineeringStoneComponent } from './products/engineering-stone/engineering-stone.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +51,15 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BannerComponent,
     ClientCounterComponent,
     ShortenPipe,
-    OurClientComponent
+    OurClientComponent,
+    PrivacyPolicyComponent,
+    DisclaimerComponent,
+    FaqComponent,
+    CareerComponent,
+    GranitesComponent,
+    MarblesComponent,
+    EngineeringStoneComponent,
+    PebbleCobbleComponent
   ],
   imports: [
     BrowserModule,

@@ -40,11 +40,8 @@ customOptionsfullBanner: OwlOptions = {
   }
 
 slides: BannerModel[] = [
-    new BannerModel ( "../../assets/resources/images/bg_1.jpg","Random first slide","Random first slide","Since 1979","We Love Modern Designs","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non urna at neque aliquam molestie. Etiam aliquet felis nec enim tincidunt vulputate.","#" ),
-    new BannerModel ( "../../assets/resources/images/bg_2.jpg","Random first slide","Random first slide","Since 1979","We Love Modern Designs","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non urna at neque aliquam molestie. Etiam aliquet felis nec enim tincidunt vulputate.","#" ),
-    new BannerModel ( "../../assets/resources/images/bg_3.jpg","Random first slide","Random first slide","Since 1979","We Love Modern Designs","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non urna at neque aliquam molestie. Etiam aliquet felis nec enim tincidunt vulputate.","#" ),
-    new BannerModel ( "../../assets/resources/images/bg_1.jpg","Random first slide","Random first slide","Since 1979","We Love Modern Designs","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non urna at neque aliquam molestie. Etiam aliquet felis nec enim tincidunt vulputate.","#" ),
-    new BannerModel ( "../../assets/resources/images/bg_2.jpg","Random first slide","Random first slide","Since 1979","We Love Modern Designs","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non urna at neque aliquam molestie. Etiam aliquet felis nec enim tincidunt vulputate.","#" )
+    new BannerModel ( "../../assets/resources/images/bg_1.jpg","Modern Designs, Conventional and Exotic.","Modern Designs, Conventional and Exotic.","Since 1979","Modern Designs, Conventional and Exotic." ),
+    new BannerModel ( "../../assets/resources/images/bg_2.jpg","For Creating Amazing Architecture Designs.","For Creating Amazing Architecture Designs.","Since 1979","For Creating Amazing Architecture Designs." )
 ];
   
   constructor() {
