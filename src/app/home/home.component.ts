@@ -110,7 +110,6 @@ export class HomeComponent implements OnInit {
         this.productsContent2 = this.productsContent['productDetails'][1];
         this.productsContent3 = this.productsContent['productDetails'][2];
         this.productsContent4 = this.productsContent['productDetails'][3];
-        console.log(this.productsContent4);
       },
       (err: HttpErrorResponse) => {
         console.log (err.message);
