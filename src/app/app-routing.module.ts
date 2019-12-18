@@ -21,13 +21,15 @@ const routes: Routes = [
   {path:'', redirectTo:'/home', pathMatch:'full'},
   {path:'home', component:HomeComponent},
   {path:'about', component:AboutComponent},
-  {path:'products', component:ProductsComponent},
-  {path:'products/granites', component:GranitesComponent},
-  {path:'products/marbles', component:MarblesComponent},
-  {path:'products/engineering-stone', component:EngineeringStoneComponent},
-  {path:'products/pebble-and-cobble', component:PebbleCobbleComponent},
-  {path:'products-listing', component:ProductListingComponent},
-  {path:'products-details', component:ProductDetailsComponent},
+  {path:'products', component:ProductsComponent, children:[
+    {path:'', component:ProductListingComponent, pathMatch:'full'},
+    {path:'granites', component:GranitesComponent},
+    {path:'marbles', component:MarblesComponent},
+    {path:'engineering-stone', component:EngineeringStoneComponent},
+    {path:'pebble-and-cobble', component:PebbleCobbleComponent},
+    {path:'products-details', component:ProductDetailsComponent}
+  ]},
+  
   {path:'projects', component:ProjectsComponent},
   {path:'career', component:CareerComponent},
   {path:'contact', component:ContactComponent},
