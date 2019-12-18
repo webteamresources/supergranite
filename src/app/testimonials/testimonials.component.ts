@@ -23,6 +23,7 @@ export class TestimonialsComponent implements OnInit {
     margin: 30,
     stagePadding: 0,
     nav: false,
+    autoHeight:true,
     navText: ['<span class="ion-ios-arrow-back">', '<span class="ion-ios-arrow-forward">'],
     responsive:{
       0:{
