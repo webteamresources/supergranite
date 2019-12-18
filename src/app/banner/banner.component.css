@@ -10,3 +10,8 @@ img { max-width: 100%;}
 .page-text { min-height: 373px; width: 50%; height: 100%; opacity: 0; font-weight: 300; font-size: 90px; color: white;} 
 .selected { opacity: 1; transition: 1s;}
 .carousel-control-prev-icon, .carousel-control-next-icon { width: 50px; height: 50px; background-color:rgba(0,0,0,0.5);  }
+
+@media screen and (max-width:768px){
+    
+.container { max-width:none;} 
+}
