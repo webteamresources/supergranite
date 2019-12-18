@@ -20,6 +20,7 @@ export class ContactComponent implements OnInit {
       //'hobbies' : new FormArray([])
     });
   }
+
   onSubmit() {   
     const formData = this.signupForm.value;
     console.log(formData);
