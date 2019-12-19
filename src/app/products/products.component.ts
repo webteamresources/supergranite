@@ -43,8 +43,6 @@ export class ProductsComponent implements OnInit {
     this.colorName = new Set(this.productsList.map(x => x.colorName).sort());
     this.regionName = new Set(this.productsList.map(x => x.regionName).sort());
   }
-
-
 //   onSelect(selectedColor) {  
 //     selectedColor = null;
 //     for (var i = 0; i < this.colorName.length; i++)
@@ -54,6 +52,6 @@ export class ProductsComponent implements OnInit {
 //       }
 //     }
 //     console.log(selectedColor);
-// }
+// }    
 
 }

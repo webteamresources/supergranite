@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { ProductService } from './../../../assets/shared/product.service';
 import { ProductModel } from './../../../assets/shared/product.model';
@@ -35,6 +35,10 @@ export class ProductListingComponent implements OnInit {
   productsList2: ProductModel[];
   productsList3: ProductModel[];
   productsList4: ProductModel[];
+
+
+  selectedName: string;
+  
   ngOnInit() {    
     this.httpService.get(this.configUrl).subscribe(
       data => {
@@ -53,10 +57,14 @@ export class ProductListingComponent implements OnInit {
   this.productsList3 = this.productService.getProduct3();
   this.productsList4 = this.productService.getProduct4();
   
-  this.productsList = this.productsList1.concat(this.productsList2, this.productsList3, this.productsList4)
-
+  this.productsList = this.productsList1.concat(this.productsList2, this.productsList3, this.productsList4);
   };
 
- 
+  childCurrentVal:string;
+  getOutputVal(selected: string) {
+      if(selected) {
+        this.childCurrentVal = selected;
+      }
+  }
 
 }

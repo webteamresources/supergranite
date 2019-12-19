@@ -1,11 +1,10 @@
-import { Injectable, OnInit } from '@angular/core';
+import { Injectable, OnInit, EventEmitter, Output } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { ProductModel } from './product.model';
 
 @Injectable({providedIn:'root'})
 
 export class ProductService implements OnInit {
-
     constructor() {}    
     ngOnInit() {
     }
@@ -185,6 +184,7 @@ export class ProductService implements OnInit {
     getProduct4() {
         return this.productsList4.slice();
     }
+
     
 
 }

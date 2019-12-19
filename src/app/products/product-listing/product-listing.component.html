@@ -1,9 +1,11 @@
-<section class="ftco-section bg-light" >
+<app-filter-option (outputToParent)="getOutputVal($event)"></app-filter-option>
+<section class="ftco-section bg-light">
     <div class="container">
         <div class="row justify-content-start mb-5 pb-2">
             <div class="col-md-4 heading-section">
                 <span class="subheading subheading-with-line"><small class="pr-2 bg-light">{{ pgTitle }}</small></span>
                 <h2 class="mb-4">{{productCat1}}</h2>
+                <h3>{{selectedName}}</h3>
             </div>
             <div class="col-md-8 pl-md-5 heading-section">
                 <div class="pl-md-4 border-line" [innerHTML]="contentTxt1"></div>

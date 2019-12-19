@@ -21,25 +21,5 @@
         </div>
     </div>
 </section>
-<section class="pt-5 pb-5" *ngIf="">
-  <div class="container">
-      <div class="row justify-content-start">
-          <div class="col-xl-6 col-md-4 form-group">
-              <label for="colorSpecific">Color Specific</label>
-              <select class="form-control default" id="colorSpecific" name="colorSpecific">
-                <option value="All" selected="">All</option>  
-                <option value="{{color}}" *ngFor="let color of colorName">{{color}}</option>
-              </select>
-          </div>
-          <div class="col-xl-6 col-md-4 form-group">  
-              <label for="regionSpecific">Region Specific</label>
-              <select class="form-control default" id="regionSpecific" name="regionSpecific">
-                <option value="All" selected="">All</option>
-                <option value="{{region}}" *ngFor="let region of regionName">{{region}}</option>
-              </select>
-          </div>
-      </div>
-  </div>
-</section>
 <!--<app-product-listing></app-product-listing>-->
 <router-outlet></router-outlet>
