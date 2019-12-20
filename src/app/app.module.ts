@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { ProductService } from './../assets/shared/product.service';
 import { ShortenPipe } from './../assets/shared/shorten.pipe';
+import { FilterColor } from './../assets/shared/filter-color.pipe';
 import { CarouselModule  } from 'ngx-owl-carousel-o';
 import 'jquery';
 import 'popper.js';
@@ -34,8 +35,8 @@ import { MarblesComponent } from './products/marbles/marbles.component';
 import { GranitesComponent } from './products/granites/granites.component';
 import { PebbleCobbleComponent } from './products/peeble-and-cobble/pebble-cobble.component';
 import { EngineeringStoneComponent } from './products/engineering-stone/engineering-stone.component';
+import { FilterOptionComponent } from './products/product-listing/filter-option/filter-option.component';
 import { OnHoverDirective } from 'src/assets/shared/on-hover.directive';
-import { FilterMarblesPipe } from 'src/assets/shared/filter-marbles.pipe';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { FilterMarblesPipe } from 'src/assets/shared/filter-marbles.pipe';
     BannerComponent,
     ClientCounterComponent,
     ShortenPipe,
+    FilterColor,
     OurClientComponent,
     PrivacyPolicyComponent,
     DisclaimerComponent,
@@ -63,7 +65,7 @@ import { FilterMarblesPipe } from 'src/assets/shared/filter-marbles.pipe';
     EngineeringStoneComponent,
     PebbleCobbleComponent,
     OnHoverDirective,
-    FilterMarblesPipe
+    FilterOptionComponent
   ],
   imports: [
     BrowserModule,

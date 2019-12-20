@@ -1,11 +1,11 @@
-<input type="text" [(ngModel)]="filteredColor">
-<hr>
-<section class="ftco-section bg-light" >
+<app-filter-option (outputToParent)="getOutputVal($event)" (outputRegionToParent)="getOutputRegionVal($event)" (colorSearched)="getSearchVal($event)"></app-filter-option>
+<section class="ftco-section bg-light">
     <div class="container">
         <div class="row justify-content-start mb-5 pb-2">
             <div class="col-md-4 heading-section">
                 <span class="subheading subheading-with-line"><small class="pr-2 bg-light">{{ pgTitle }}</small></span>
                 <h2 class="mb-4">{{productCat1}}</h2>
+                <h3>{{selectedName}}</h3>
             </div>
             <div class="col-md-8 pl-md-5 heading-section">
                 <div class="pl-md-4 border-line" [innerHTML]="contentTxt1"></div>
@@ -14,21 +14,11 @@
     </div>
     <div class="container">
         <div class="row no-gutters1">
-            <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of productsList1 | filterMarbles:filteredColor:'colorName'">
+            <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of productsList1 | filterColor:childCurrentVal:'colorName'| filterColor:childCurrentRegionVal:'regionName' | filterColor:childSearchedVal:'colorName' | filterColor:childSearchedVal:'name' | filterColor:childSearchedVal:'category' | filterColor:childSearchedVal:'regionName'">
                 <div class=" project">
                     <img [src]="product.imagePath" class="img-fluid product-object-fit" alt="{{product.name}}">
-                    <!-- <div class="project">
-                        <img [src]="product.imagePath" class="img-fluid" alt="{{product.name}}">
-                        <div class="text">
-                            <span>{{prodCont.productCat}}</span>
-                            <h3><a href="#">{{product.name}}</a></h3>
-                        </div>
-                        <a href="#" class="icon d-flex justify-content-center align-items-center">
-                            <span class="icon-expand"></span>
-                        </a>
-                    </div> -->
                     <div class="productText">
-                        <span>{{product.category}}</span> <span> - {{product.colorName}}</span>
+                        <span>{{product.category}}</span> <span> - {{product.colorName}}</span> <small> - {{product.regionName}}</small>
                         <h3><a href="#">{{product.name}}</a></h3>
                     </div>
                 </div>
@@ -50,11 +40,11 @@
     </div>
     <div class="container">
         <div class="row no-gutters1">
-            <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of productsList2 | filterMarbles:filteredColor:'colorName'">
+            <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of productsList1 | filterColor:childCurrentVal:'colorName'| filterColor:childCurrentRegionVal:'regionName' | filterColor:childSearchedVal:'colorName' | filterColor:childSearchedVal:'name' | filterColor:childSearchedVal:'category' | filterColor:childSearchedVal:'regionName'">
                 <div class=" project">
                     <img [src]="product.imagePath" class="img-fluid product-object-fit" alt="{{product.name}}">
                     <div class="productText">
-                        <span>{{product.category}}</span> <span> - {{product.colorName}}</span>
+                        <span>{{product.category}}</span> <span> - {{product.colorName}}</span> <small> - {{product.regionName}}</small>
                         <h3><a href="#">{{product.name}}</a></h3>
                     </div>
                 </div>
@@ -77,11 +67,11 @@
     </div>
     <div class="container">
         <div class="row no-gutters1">
-            <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of productsList3 | filterMarbles:filteredColor:'colorName'">
+            <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of productsList1 | filterColor:childCurrentVal:'colorName'| filterColor:childCurrentRegionVal:'regionName' | filterColor:childSearchedVal:'colorName' | filterColor:childSearchedVal:'name' | filterColor:childSearchedVal:'category' | filterColor:childSearchedVal:'regionName'">
                 <div class=" project">
                     <img [src]="product.imagePath" class="img-fluid product-object-fit" alt="{{product.name}}">
                     <div class="productText">
-                        <span>{{product.category}}</span> <span> - {{product.colorName}}</span>
+                        <span>{{product.category}}</span> <span> - {{product.colorName}}</span> <small> - {{product.regionName}}</small>
                         <h3><a href="#">{{product.name}}</a></h3>
                     </div>
                 </div>
@@ -104,11 +94,11 @@
     </div>
     <div class="container">
         <div class="row no-gutters1">
-            <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of productsList4 | filterMarbles:filteredColor:'colorName'">
+            <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of productsList1 | filterColor:childCurrentVal:'colorName'| filterColor:childCurrentRegionVal:'regionName' | filterColor:childSearchedVal:'colorName' | filterColor:childSearchedVal:'name' | filterColor:childSearchedVal:'category' | filterColor:childSearchedVal:'regionName'">
                 <div class=" project">
                     <img [src]="product.imagePath" class="img-fluid product-object-fit" alt="{{product.name}}">
                     <div class="productText">
-                        <span>{{product.category}}</span> <span> - {{product.colorName}}</span>
+                        <span>{{product.category}}</span> <span> - {{product.colorName}}</span> <small> - {{product.regionName}}</small>
                         <h3><a href="#">{{product.name}}</a></h3>
                     </div>
                 </div>

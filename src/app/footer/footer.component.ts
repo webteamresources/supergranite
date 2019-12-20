@@ -9,7 +9,10 @@ import { map } from 'rxjs/operators';
 })
 export class FooterComponent implements OnInit {
   configUrl = "../../assets/content/common.json";
-  commonData;
+  commonData: any;
+  homeData = [];
+  productData = [];
+  otherData: any;
 
   constructor(private http: HttpClient) { }
 
@@ -18,7 +21,9 @@ export class FooterComponent implements OnInit {
     .subscribe(
       data => {
         this.commonData = data as string[];
-        console.log(this.commonData);
+        this.homeData = this.commonData['pgData'];
+        this.productData = this.commonData['productPg'];
+        this.otherData = this.commonData['otherData'];
       },
       (err: HttpErrorResponse) => {
         console.log (err.message);
