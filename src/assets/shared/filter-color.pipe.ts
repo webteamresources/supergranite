@@ -1,7 +1,8 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'filterColor'
+  name: 'filterColor',
+    pure: false
 })
 export class FilterColor implements PipeTransform {
     

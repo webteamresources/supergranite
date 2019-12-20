@@ -14,7 +14,7 @@
     </div>
     <div class="container">
         <div class="row no-gutters1">
-            <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of productsList1 | filterColor:childCurrentVal:'colorName' | filterColor:childSearchedVal:'colorName'">
+            <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of productsList1 | filterColor:childCurrentVal:'colorName' | filterColor:childSearchedVal:'category'">
                 <div class=" project">
                     <img [src]="product.imagePath" class="img-fluid product-object-fit" alt="{{product.name}}">
                     <div class="productText">

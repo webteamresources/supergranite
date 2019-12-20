@@ -1,0 +1,40 @@
+{   
+    "productDetails": [
+        {
+            "productCat":"Granites",
+            "contentTxt": "<p>They prefer a granite supplier or podium for getting big varieties and secure transactions under a single roof. Consequently, Super Granites and Marbles, one the professional and experienced granite suppliers in India, offers real-time solutions for universal buyers</p>",
+            "product": [
+                {"name":"Chocolate Pearl Granite", "category":"Granites",  "colorName":"Chocolate", "regionName":"Brazil", "imagePath":"/assets/resources/images/products/granites/Brazil/Chocolate-Pearl-Granite.jpg" },
+                {"name":"Labradorite Granite", "category":"Granites",  "colorName":"Red", "regionName":"Brazil", "imagePath":"/assets/resources/images/products/granites/Brazil/Labradorite-Granite.jpg" },
+                {"name":"Lemurian Blue Granite", "category":"Granites",  "colorName":"Blue", "regionName":"Brazil", "imagePath":"/assets/resources/images/products/granites/Brazil/Lemurian-Blue-Granite.jpg" }
+            ]
+        },
+        {
+            "productCat":"Granites",
+            "contentTxt": "<p>They prefer a granite supplier or podium for getting big varieties and secure transactions under a single roof. Consequently, Super Granites and Marbles, one the professional and experienced granite suppliers in India, offers real-time solutions for universal buyers</p>",
+            "product": [
+                {"name":"Chocolate Pearl Granite", "category":"Granites",  "colorName":"Chocolate", "regionName":"Brazil", "imagePath":"/assets/resources/images/products/granites/Brazil/Chocolate-Pearl-Granite.jpg" },
+                {"name":"Labradorite Granite", "category":"Granites",  "colorName":"Red", "regionName":"Brazil", "imagePath":"/assets/resources/images/products/granites/Brazil/Labradorite-Granite.jpg" },
+                {"name":"Lemurian Blue Granite", "category":"Granites",  "colorName":"Blue", "regionName":"Brazil", "imagePath":"/assets/resources/images/products/granites/Brazil/Lemurian-Blue-Granite.jpg" }
+            ]
+        },
+        {
+            "productCat":"Granites",
+            "contentTxt": "<p>They prefer a granite supplier or podium for getting big varieties and secure transactions under a single roof. Consequently, Super Granites and Marbles, one the professional and experienced granite suppliers in India, offers real-time solutions for universal buyers</p>",
+            "product1": [
+                {"name":"Chocolate Pearl Granite", "category":"Granites",  "colorName":"Chocolate", "regionName":"Brazil", "imagePath":"/assets/resources/images/products/granites/Brazil/Chocolate-Pearl-Granite.jpg" },
+                {"name":"Labradorite Granite", "category":"Granites",  "colorName":"Red", "regionName":"Brazil", "imagePath":"/assets/resources/images/products/granites/Brazil/Labradorite-Granite.jpg" },
+                {"name":"Lemurian Blue Granite", "category":"Granites",  "colorName":"Blue", "regionName":"Brazil", "imagePath":"/assets/resources/images/products/granites/Brazil/Lemurian-Blue-Granite.jpg" }
+            ]
+        },
+        {
+            "productCat":"Granites",
+            "contentTxt": "<p>They prefer a granite supplier or podium for getting big varieties and secure transactions under a single roof. Consequently, Super Granites and Marbles, one the professional and experienced granite suppliers in India, offers real-time solutions for universal buyers</p>",
+            "product1": [
+                {"name":"Chocolate Pearl Granite", "category":"Granites",  "colorName":"Chocolate", "regionName":"Brazil", "imagePath":"/assets/resources/images/products/granites/Brazil/Chocolate-Pearl-Granite.jpg" },
+                {"name":"Labradorite Granite", "category":"Granites",  "colorName":"Red", "regionName":"Brazil", "imagePath":"/assets/resources/images/products/granites/Brazil/Labradorite-Granite.jpg" },
+                {"name":"Lemurian Blue Granite", "category":"Granites",  "colorName":"Blue", "regionName":"Brazil", "imagePath":"/assets/resources/images/products/granites/Brazil/Lemurian-Blue-Granite.jpg" }
+            ]
+        }
+    ]
+}
