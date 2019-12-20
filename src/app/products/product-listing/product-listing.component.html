@@ -1,4 +1,4 @@
-<app-filter-option (outputToParent)="getOutputVal($event)"></app-filter-option>
+<app-filter-option (outputToParent)="getOutputVal($event)" (colorSearched)="getSearchVal($event)"></app-filter-option>
 <section class="ftco-section bg-light">
     <div class="container">
         <div class="row justify-content-start mb-5 pb-2">
@@ -14,19 +14,9 @@
     </div>
     <div class="container">
         <div class="row no-gutters1">
-            <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of productsList1">
+            <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of productsList1 | filterColor:childCurrentVal:'colorName' | filterColor:childSearchedVal:'colorName'">
                 <div class=" project">
                     <img [src]="product.imagePath" class="img-fluid product-object-fit" alt="{{product.name}}">
-                    <!-- <div class="project">
-                        <img [src]="product.imagePath" class="img-fluid" alt="{{product.name}}">
-                        <div class="text">
-                            <span>{{prodCont.productCat}}</span>
-                            <h3><a href="#">{{product.name}}</a></h3>
-                        </div>
-                        <a href="#" class="icon d-flex justify-content-center align-items-center">
-                            <span class="icon-expand"></span>
-                        </a>
-                    </div> -->
                     <div class="productText">
                         <span>{{product.category}}</span> <span> - {{product.colorName}}</span>
                         <h3><a href="#">{{product.name}}</a></h3>
@@ -50,7 +40,7 @@
     </div>
     <div class="container">
         <div class="row no-gutters1">
-            <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of productsList2">
+            <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of productsList2 | filterColor:childCurrentVal:'colorName'">
                 <div class=" project">
                     <img [src]="product.imagePath" class="img-fluid product-object-fit" alt="{{product.name}}">
                     <div class="productText">
@@ -77,7 +67,7 @@
     </div>
     <div class="container">
         <div class="row no-gutters1">
-            <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of productsList3">
+            <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of productsList3 | filterColor:childCurrentVal:'colorName'">
                 <div class=" project">
                     <img [src]="product.imagePath" class="img-fluid product-object-fit" alt="{{product.name}}">
                     <div class="productText">
@@ -104,7 +94,7 @@
     </div>
     <div class="container">
         <div class="row no-gutters1">
-            <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of productsList4">
+            <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of productsList4 | filterColor:childCurrentVal:'colorName'">
                 <div class=" project">
                     <img [src]="product.imagePath" class="img-fluid product-object-fit" alt="{{product.name}}">
                     <div class="productText">

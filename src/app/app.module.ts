@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { ProductService } from './../assets/shared/product.service';
 import { ShortenPipe } from './../assets/shared/shorten.pipe';
+import { FilterColor } from './../assets/shared/filter-color.pipe';
 import { CarouselModule  } from 'ngx-owl-carousel-o';
 import 'jquery';
 import 'popper.js';
@@ -53,6 +54,7 @@ import { OnHoverDirective } from 'src/assets/shared/on-hover.directive';
     BannerComponent,
     ClientCounterComponent,
     ShortenPipe,
+    FilterColor,
     OurClientComponent,
     PrivacyPolicyComponent,
     DisclaimerComponent,

@@ -36,7 +36,7 @@ export class ProductListingComponent implements OnInit {
   productsList3: ProductModel[];
   productsList4: ProductModel[];
 
-
+  colorNames;
   selectedName: string;
   
   ngOnInit() {    
@@ -58,12 +58,19 @@ export class ProductListingComponent implements OnInit {
   this.productsList4 = this.productService.getProduct4();
   
   this.productsList = this.productsList1.concat(this.productsList2, this.productsList3, this.productsList4);
+  this.colorNames = this.productsList.map(x => x.colorName);
   };
 
-  childCurrentVal:string;
+  childCurrentVal:string = '';
+  childSearchedVal:string = '';
   getOutputVal(selected: string) {
       if(selected) {
         this.childCurrentVal = selected;
+      }
+  }
+  getSearchVal(selected: string) {
+      if(selected) {
+        this.childSearchedVal = selected;
       }
   }
 

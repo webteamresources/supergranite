@@ -1,19 +1,23 @@
 <section class="pt-5 pb-5">
     <div class="container">
         <div class="row justify-content-start">
-            <div class="col-xl-6 col-md-4 form-group">
+            <div class="col-xl-4 col-md-4 form-group">
                 <label for="colorSpecific">Color Specific</label>
                 <select class="form-control default" id="colorSpecific" name="colorSpecific" (change)="onColorSelect($event.target.value)">
                   <option value="All" selected="">All</option>  
                   <option value="{{color}}" *ngFor="let color of colorName">{{color}}</option>
                 </select>
             </div>
-            <div class="col-xl-6 col-md-4 form-group">  
+            <div class="col-xl-4 col-md-4 form-group">  
                 <label for="regionSpecific">Region Specific</label>
-                <select class="form-control default" id="regionSpecific" name="regionSpecific" (change)="onRegionSelect(color)">
+                <select class="form-control default" id="regionSpecific" name="regionSpecific" (change)="onRegionSelect($event.target.value)">
                   <option value="All" selected="">All</option>
                   <option value="{{region}}" *ngFor="let region of regionName">{{region}}</option>
                 </select>
+            </div>
+            <div class="col-xl-4 col-md-4 form-group">  
+                <label for="colorSpecific">Search</label>
+                <input type="text" id="colorSpecific" name="colorSpecific"  class="form-control default" (keyup)="onColorSearched($event.target.value)">
             </div>
         </div>
     </div>

@@ -18,7 +18,7 @@ export class FilterOptionComponent implements OnInit {
   productsList4: ProductModel[];
   colorName;
   regionName;
-  @Output() colorSelected =  new EventEmitter<string>();
+  @Output() colorSearched =  new EventEmitter<string>();
   @Output() outputToParent =  new EventEmitter<string>();
 
   regionSelected;
@@ -37,23 +37,10 @@ export class FilterOptionComponent implements OnInit {
   
   onColorSelect(selected: string) {
     this.outputToParent.emit(selected);
-    console.log(selected);
   }
-  
-  onRegionSelect(event) {
-    for (let key of this.regionName.keys()) {
-      if (key == event) {
-        break;        
-      }
-    }
+  onColorSearched(selected: string) {
+    this.colorSearched.emit(selected);
   }
-
-
-  notifToParent(selected: string){
-    this.outputToParent.emit(selected);
-    //console.log(selected);
-  }
-
 
 
 }
