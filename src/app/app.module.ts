@@ -75,7 +75,7 @@ import { OnHoverDirective } from 'src/assets/shared/on-hover.directive';
     FormsModule,
     ReactiveFormsModule,
     NgbModule,
-    CarouselModule    
+    CarouselModule
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]

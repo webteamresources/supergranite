@@ -35,7 +35,7 @@ const routes: Routes = [
   {path:'contact', component:ContactComponent},
   {path:'privacy-policy', component:PrivacyPolicyComponent},
   {path:'disclaimer', component:DisclaimerComponent},
-  {path:'faq', component: FaqComponent},
+  {path:'faq', component: FaqComponent}
 ];
 
 @NgModule({
