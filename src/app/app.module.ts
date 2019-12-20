@@ -35,6 +35,7 @@ import { GranitesComponent } from './products/granites/granites.component';
 import { PebbleCobbleComponent } from './products/peeble-and-cobble/pebble-cobble.component';
 import { EngineeringStoneComponent } from './products/engineering-stone/engineering-stone.component';
 import { OnHoverDirective } from 'src/assets/shared/on-hover.directive';
+import { FilterMarblesPipe } from 'src/assets/shared/filter-marbles.pipe';
 
 @NgModule({
   declarations: [
@@ -61,7 +62,8 @@ import { OnHoverDirective } from 'src/assets/shared/on-hover.directive';
     MarblesComponent,
     EngineeringStoneComponent,
     PebbleCobbleComponent,
-    OnHoverDirective
+    OnHoverDirective,
+    FilterMarblesPipe
   ],
   imports: [
     BrowserModule,

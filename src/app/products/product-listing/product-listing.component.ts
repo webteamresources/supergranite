@@ -55,7 +55,11 @@ export class ProductListingComponent implements OnInit {
   
   this.productsList = this.productsList1.concat(this.productsList2, this.productsList3, this.productsList4)
 
-  };
+};
+
+
+
+  filteredColor = ""
 
  
 
