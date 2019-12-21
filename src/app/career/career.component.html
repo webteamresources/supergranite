@@ -1,0 +1,48 @@
+<section class="hero-wrap hero-wrap-2" style="background-image: url(/assets/resources/images/bg_1.jpg);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text align-items-center justify-content-center">
+        <div class="col-md-9 text-center">
+          <h1 class="mb-2 bread">{{pgTitle}}</h1>
+          <p class="breadcrumbs"><span class="mr-2"><a routerLink="/home">Home ></a></span> <span>{{pgTitle}} ></span></p>
+        </div>
+      </div>
+    </div>
+</section>
+<section class="ftco-section ftco-no-pt ftco-no-pb contact-section">
+    <div class="container-wrap">
+        <div class="row d-flex justify-content-center no-gutters">
+            <div class="col-md-8 p-5">   
+                <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">                   
+                    <div class="row">
+                        <div class="col-md-12">    
+                            <div class="form-group">
+                                <input id="form_firstname" type="text" class="form-control" formControlName="fname" name="name" placeholder="Please enter your firstname *" data-error="Firstname is required.">
+                                <div class="help-block with-errors" *ngIf="!signupForm.get('fname').valid && signupForm.get('fname').touched">Firstname is required.</div>
+                            </div>
+                            <div class="form-group">
+                                <input id="form_lastname" type="text" class="form-control" formControlName="lname" name="surname" placeholder="Please enter your lastname *" data-error="Lastname is required.">
+                                <div class="help-block with-errors" *ngIf="!signupForm.get('lname').valid && signupForm.get('lname').touched">Lastname is required.</div>
+                            </div>
+                            <div class="form-group">
+                                <input id="form_need" type="text" class="form-control" formControlName="phone" name="phone" placeholder="Mobile Number">
+                            </div>
+                            <div class="form-group">
+                                <input id="form_need" type="text" class="form-control" formControlName="email" name="email" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input id="form_upload" type="file" class="form-control" formControlName="upload" name="upload" placeholder="Upload Resume">
+                            </div>
+                            <div class="col-md-12">
+                                <p class="text-muted"><strong>*</strong> These fields are required.</p>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary py-3 px-5" [disabled]="!signupForm.valid">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

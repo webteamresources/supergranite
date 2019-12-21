@@ -21,6 +21,7 @@ export class ProductsComponent implements OnInit {
   productsList4: ProductModel[];
   colorName;
   regionName;
+  pgTitle = "Products";
 
   ngOnInit() {
     this.httpService.get(this.configUrl).subscribe(
@@ -43,7 +44,16 @@ export class ProductsComponent implements OnInit {
     this.regionName = new Set(this.productsList.map(x => x.regionName).sort());
   }
 
-
+  onActivate(event) {
+    let scrollToTop = window.setInterval(() => {
+        let pos = window.pageYOffset;
+        if (pos > 0) {
+            window.scrollTo(0, pos - 50); // how far to scroll on each step
+        } else {
+            window.clearInterval(scrollToTop);
+        }
+    }, 16);
+  }
 //   onSelect(selectedColor) {  
 //     selectedColor = null;
 //     for (var i = 0; i < this.colorName.length; i++)
@@ -53,6 +63,6 @@ export class ProductsComponent implements OnInit {
 //       }
 //     }
 //     console.log(selectedColor);
-// }
+// }    
 
 }

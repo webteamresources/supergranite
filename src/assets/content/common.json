@@ -1,0 +1,24 @@
+{
+    "pgData": 
+    [
+        {"pgTl" : "Home", "pgUrl" : "home"},
+        {"pgTl" : "About", "pgUrl" : "about"},
+        {"pgTl" : "Projects", "pgUrl" : "projects"},
+        {"pgTl" : "Career", "pgUrl" : "career"},
+        {"pgTl" : "Contact", "pgUrl" : "contact"},
+        {"pgTl" : "Privacy Policy", "pgUrl" : "privacy-policy"},
+        {"pgTl" : "Disclaimer", "pgUrl" : "disclaimer"},
+        {"pgTl" : "FAQ’s", "pgUrl" : "faq"}
+    ],
+    "productPg": 
+    [
+        {"pgTl" : "Granites", "pgUrl" : "products/granites"},
+        {"pgTl" : "Marbles", "pgUrl" : "products/marbles"},
+        {"pgTl" : "Engineering Marbles", "pgUrl" : "products/engineering-stone"},
+        {"pgTl" : "Peeble and Cobble", "pgUrl" : "products/pebble-and-cobble"}
+    ],
+    "otherData" :
+    [
+        {"contactNumber": "+91 9820 092 602", "emailId": "info@supergranitesandmarbles.com","address": "Madni Estate, Behind Famous Timber Mart, Dargah Road, Bhandup Complex Road, Sonapur, Bhandup West, Mumbai, Maharashtra 400078","copyTxt": "Copyright © 2019 Super Granites and Marbles. All rights reserved"}
+    ]
+}

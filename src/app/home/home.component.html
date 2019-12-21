@@ -1,129 +1,147 @@
 <app-banner></app-banner>
 <router-outlet></router-outlet>
 <section class="ftco-section bg-light" >
-        <div class="container">
-            <div class="row justify-content-start mb-5 pb-2">
-                <div class="col-md-4 heading-section">
-                    <span class="subheading subheading-with-line"><small class="pr-2 bg-light">{{ productsContent.pgTitle }}</small></span>
-                    <h2 class="mb-4">{{productsContent1.productCat}}</h2>
-                </div>
-                <div class="col-md-8 pl-md-5 heading-section">
-                    <div class="pl-md-4 border-line" [innerHTML]="productsContent1.contentTxt"></div>
+    <div class="container">
+        <div class="row justify-content-start mb-5 pb-2">
+            <div class="col-md-4 heading-section">
+                <span class="subheading subheading-with-line"><small class="pr-2 bg-light">{{ pgTitle }}</small></span>
+                <h2 class="mb-4">{{productCat1}}</h2>
+            </div>
+            <div class="col-md-8 pl-md-5 heading-section">
+                <div class="pl-md-4 border-line" [innerHTML]="contentTxt1"></div>
+                <div class="pl-md-4">
+                        <a routerLink="../products/granites">View More</a>
                 </div>
             </div>
         </div>
-    
-        <ul>
-            <li *ngFor="let item of productsList">{{item.colorName}}</li>
-        </ul>
-    
-        <div class="container">
-            <div class="row no-gutters1">
-                <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of productsList1">
-                    <div class=" project">
-                        <img [src]="product.imagePath" class="img-fluid product-object-fit" alt="{{product.name}}">
-                        <!-- <div class="project">
-                            <img [src]="product.imagePath" class="img-fluid" alt="{{product.name}}">
-                            <div class="text">
-                                <span>{{prodCont.productCat}}</span>
+    </div>
+    <div class="container">
+        <owl-carousel-o [options]="customOptions01">
+            <ng-container *ngFor="let product of productsList1; let i = index">
+                <ng-template carouselSlide [id]="i">
+                    <div class="fadeInUp">
+                        <div class=" project">
+                            <img [src]="product.imagePath" class="img-fluid product-object-fit" alt="{{product.name}}">
+                            <!-- <div class="project">
+                                <img [src]="product.imagePath" class="img-fluid" alt="{{product.name}}">
+                                <div class="text">
+                                    <span>{{prodCont.productCat}}</span>
+                                    <h3><a href="#">{{product.name}}</a></h3>
+                                </div>
+                                <a href="#" class="icon d-flex justify-content-center align-items-center">
+                                    <span class="icon-expand"></span>
+                                </a>
+                            </div> -->
+                            <div class="productText">
+                                <span>{{product.category}}</span> <span> - {{product.colorName}}</span>
                                 <h3><a href="#">{{product.name}}</a></h3>
                             </div>
-                            <a href="#" class="icon d-flex justify-content-center align-items-center">
-                                <span class="icon-expand"></span>
-                            </a>
-                        </div> -->
-                        <div class="productText">
-                            <span>{{product.category}}</span> <span> - {{product.colorName}}</span>
-                            <h3><a href="#">{{product.name}}</a></h3>
+                        </div>
+                    </div></ng-template>
+            </ng-container>
+        </owl-carousel-o>
+    </div>
+</section>
+<section class="ftco-section bg-light" >
+    <div class="container">
+        <div class="row justify-content-start mb-5 pb-2">
+            <div class="col-md-4 heading-section">
+                <span class="subheading subheading-with-line"><small class="pr-2 bg-light">{{ pgTitle }}</small></span>
+                <h2 class="mb-4">{{productCat2}}</h2>
+            </div>
+            <div class="col-md-8 pl-md-5 heading-section">
+                <div class="pl-md-4 border-line" [innerHTML]="contentTxt2"></div>
+                <div class="pl-md-4">
+                    <a routerLink="../products/marbles">View More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <owl-carousel-o [options]="customOptions02">
+            <ng-container *ngFor="let product of productsList2; let i = index">
+                <ng-template carouselSlide [id]="i">
+                    <div class="fadeInUp">
+                        <div class=" project">
+                            <img [src]="product.imagePath" class="img-fluid product-object-fit" alt="{{product.name}}">
+                            <div class="productText">
+                                <span>{{product.category}}</span> <span> - {{product.colorName}}</span>
+                                <h3><a href="#">{{product.name}}</a></h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="ftco-section bg-light" >
-        <div class="container">
-            <div class="row justify-content-start mb-5 pb-2">
-                <div class="col-md-4 heading-section">
-                    <span class="subheading subheading-with-line"><small class="pr-2 bg-light">{{ productsContent.pgTitle }}</small></span>
-                    <h2 class="mb-4">{{productsContent2.productCat}}</h2>
-                </div>
-                <div class="col-md-8 pl-md-5 heading-section">
-                    <div class="pl-md-4 border-line" [innerHTML]="productsContent2.contentTxt"></div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row no-gutters1">
-                <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of productsList2">
-                    <div class=" project">
-                        <img [src]="product.imagePath" class="img-fluid product-object-fit" alt="{{product.name}}">
-                        <div class="productText">
-                            <span>{{product.category}}</span> <span> - {{product.colorName}}</span>
-                            <h3><a href="#">{{product.name}}</a></h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section class="ftco-section bg-light" >
-        <div class="container">
-            <div class="row justify-content-start mb-5 pb-2">
-                <div class="col-md-4 heading-section">
-                    <span class="subheading subheading-with-line"><small class="pr-2 bg-light">{{ productsContent.pgTitle }}</small></span>
-                    <h2 class="mb-4">{{productsContent3.productCat}}</h2>
-                </div>
-                <div class="col-md-8 pl-md-5 heading-section">
-                    <div class="pl-md-4 border-line" [innerHTML]="productsContent3.contentTxt"></div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row no-gutters1">
-                <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of productsList3">
-                    <div class=" project">
-                        <img [src]="product.imagePath" class="img-fluid product-object-fit" alt="{{product.name}}">
-                        <div class="productText">
-                            <span>{{product.category}}</span> <span> - {{product.colorName}}</span>
-                            <h3><a href="#">{{product.name}}</a></h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section class="ftco-section bg-light" >
-        <div class="container">
-            <div class="row justify-content-start mb-5 pb-2">
-                <div class="col-md-4 heading-section">
-                    <span class="subheading subheading-with-line"><small class="pr-2 bg-light">{{ productsContent.pgTitle }}</small></span>
-                    <h2 class="mb-4">{{productsContent4.productCat}}</h2>
-                </div>
-                <div class="col-md-8 pl-md-5 heading-section">
-                    <div class="pl-md-4 border-line" [innerHTML]="productsContent4.contentTxt"></div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row no-gutters1">
-                <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of productsList4">
-                    <div class=" project">
-                        <img [src]="product.imagePath" class="img-fluid product-object-fit" alt="{{product.name}}">
-                        <div class="productText">
-                            <span>{{product.category}}</span> <span> - {{product.colorName}}</span>
-                            <h3><a href="#">{{product.name}}</a></h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    
+                    </ng-template>
+            </ng-container>
+        </owl-carousel-o>
+    </div>
+</section>
 
+<section class="ftco-section bg-light" >
+    <div class="container">
+        <div class="row justify-content-start mb-5 pb-2">
+            <div class="col-md-4 heading-section">
+                <span class="subheading subheading-with-line"><small class="pr-2 bg-light">{{ pgTitle }}</small></span>
+                <h2 class="mb-4">{{productCat3}}</h2>
+            </div>
+            <div class="col-md-8 pl-md-5 heading-section">
+                <div class="pl-md-4 border-line" [innerHTML]="contentTxt3"></div>
+                <div class="pl-md-4">
+                        <a routerLink="../products/engineering-stone">View More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <owl-carousel-o [options]="customOptions02">
+            <ng-container *ngFor="let product of productsList3; let i = index">
+                <ng-template carouselSlide [id]="i">
+                    <div class="fadeInUp">
+                        <div class=" project">
+                            <img [src]="product.imagePath" class="img-fluid product-object-fit" alt="{{product.name}}">
+                            <div class="productText">
+                                <span>{{product.category}}</span> <span> - {{product.colorName}}</span>
+                                <h3><a href="#">{{product.name}}</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </ng-container>
+        </owl-carousel-o>
+    </div>
+</section>
 
+<section class="ftco-section bg-light" >
+    <div class="container">
+        <div class="row justify-content-start mb-5 pb-2">
+            <div class="col-md-4 heading-section">
+                <span class="subheading subheading-with-line"><small class="pr-2 bg-light">{{ pgTitle }}</small></span>
+                <h2 class="mb-4">{{productCat4}}</h2>
+            </div>
+            <div class="col-md-8 pl-md-5 heading-section">
+                <div class="pl-md-4 border-line" [innerHTML]="contentTxt4"></div>
+                <div class="pl-md-4">
+                        <a routerLink="../products/pebble-and-cobble">View More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <owl-carousel-o [options]="customOptions02">
+            <ng-container *ngFor="let product of productsList4; let i = index">
+                <ng-template carouselSlide [id]="i">
+                    <div class="fadeInUp">
+                        <div class="project">
+                            <img [src]="product.imagePath" class="img-fluid product-object-fit" alt="{{product.name}}">
+                            <div class="productText">
+                                <span>{{product.category}}</span> <span> - {{product.colorName}}</span>
+                                <h3><a href="#">{{product.name}}</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </ng-container>
+        </owl-carousel-o>
+    </div>
+</section>
 <app-client-counter></app-client-counter>
 <app-testimonials></app-testimonials>

@@ -1,11 +1,10 @@
-import { Injectable, OnInit } from '@angular/core';
+import { Injectable, OnInit, EventEmitter, Output } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { ProductModel } from './product.model';
 
 @Injectable({providedIn:'root'})
 
 export class ProductService implements OnInit {
-
     constructor() {}    
     ngOnInit() {
     }
@@ -91,14 +90,87 @@ export class ProductService implements OnInit {
             new ProductModel ( "Sparrow Marble", "Marbles", "-", "South India", "/assets/resources/images/products/Marble-All-South-Indian/Sparrow-Marble.jpg" ),
         ];
     productsList3: ProductModel[] = [
-            new ProductModel ( "Chocolate Pearl Granite", "Engineering Stone", "Chocolate", "Brazil", "/assets/resources/images/products/granites/Brazil/Chocolate-Pearl-Granite.jpg" ),
-            new ProductModel ( "Labradorite Granite", "Engineering Stone", "Red", "Brazil", "/assets/resources/images/products/granites/Brazil/Labradorite-Granite.jpg" ),
-            new ProductModel ( "Lemurian Blue Granite", "Engineering Stone", "Blue", "Brazil", "/assets/resources/images/products/granites/Brazil/Lemurian-Blue-Granite.jpg" )
+            new ProductModel ( "Royal Dream", "Engineering Marbles", "-", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Royal-Dream.jpeg" ),
+            new ProductModel ( "Amarillo Gold", "Engineering Marbles", "Gold", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Amarillo-Gold.jpg" ),
+            new ProductModel ( "Anthracite", "Engineering Marbles", "-", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Anthracite.jpg" ),
+            new ProductModel ( "Arctic White", "Engineering Marbles", "White", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Arctic-White.jpg" ),
+            new ProductModel ( "Avlanche", "Engineering Marbles", "-", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Avlanche.jpg" ),
+            new ProductModel ( "Azul", "Engineering Marbles", "-", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Azul.jpg" ),
+            new ProductModel ( "Bianco Desert", "Engineering Marbles", "-", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Bianco-Desert.jpg" ),
+            new ProductModel ( "Bianco Maple", "Engineering Marbles", "-", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Bianco-Maple.jpg" ),
+            new ProductModel ( "Black Stardust", "Engineering Marbles", "Black", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Black-Stardust.jpg" ),
+            new ProductModel ( "Brown Flower", "Engineering Marbles", "Brown", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Brown-Flower.jpg" ),
+            new ProductModel ( "Burgundy Maple", "Engineering Marbles", "Burgundy", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Burgundy-Maple.jpg" ),
+            new ProductModel ( "Coasta Beige", "Engineering Marbles", "Beige", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Coasta-Beige.jpg" ),
+            new ProductModel ( "Coasta Ivory", "Engineering Marbles", "Ivory", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Coasta-Ivory.jpg" ),
+            new ProductModel ( "Coasta Maple", "Engineering Marbles", "Maple", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Coasta-Maple.jpg" ),
+            new ProductModel ( "Cosmus Black", "Engineering Marbles", "Black", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Cosmus-Black.jpg" ),
+            new ProductModel ( "Cosmus Gold", "Engineering Marbles", "Gold", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Cosmus-Gold.jpg" ),
+            new ProductModel ( "Emperador", "Engineering Marbles", "-", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Emperador.jpg" ),
+            new ProductModel ( "Essel Brown", "Engineering Marbles", "Brown", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Essel-Brown.jpg" ),
+            new ProductModel ( "Galaxy", "Engineering Marbles", "-", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Galaxy.jpg" ),
+            new ProductModel ( "Galaxy Glitter", "Engineering Marbles", "Glitter", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Galaxy-Glitter.jpg" ),
+            new ProductModel ( "Ginger Tan", "Engineering Marbles", "Tan", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Ginger-Tan.jpg" ),
+            new ProductModel ( "Gold Glitter", "Engineering Marbles", "Gold", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Gold-Glitter.jpg" ),
+            new ProductModel ( "Graphite Grey", "Engineering Marbles", "Grey", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Graphite-Grey.jpg" ),
+            new ProductModel ( "Indiano", "Engineering Marbles", "-", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/indiano.jpg" ),
+            new ProductModel ( "Island", "Engineering Marbles", "-", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Island.jpg" ),
+            new ProductModel ( "Ming Onyx", "Engineering Marbles", "-", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Ming-Onyx.jpg" ),
+            new ProductModel ( "Moon Onyx", "Engineering Marbles", "-", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Moon-Onyx.jpg" ),
+            new ProductModel ( "New Mud Pie", "Engineering Marbles", "-", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/New-Mud-Pie.jpg" ),
+            new ProductModel ( "Oasis", "Engineering Marbles", "-", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Oasis.jpg" ),
+            new ProductModel ( "Oyster Beige", "Engineering Marbles", "Beige", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Oyster-Beige.jpg" ),
+            new ProductModel ( "Paloma White", "Engineering Marbles", "White", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Paloma-White.jpg" ),
+            new ProductModel ( "Polar Stone", "Engineering Marbles", "-", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Polar-Stone.jpg" ),
+            new ProductModel ( "Red Stardust", "Engineering Marbles", "Red", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Red-Stardust.jpg" ),
+            new ProductModel ( "Sahara Storm", "Engineering Marbles", "-", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/sahara-storm.jpg" ),
+            new ProductModel ( "Samoa", "Engineering Marbles", "-", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Samoa.jpg" ),
+            new ProductModel ( "Samper White", "Engineering Marbles", "White", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Samper-White.jpg" ),
+            new ProductModel ( "Sapphire Blue", "Engineering Marbles", "Blue", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Sapphire-Blue.jpg" ),
+            new ProductModel ( "Sky Stardust", "Engineering Marbles", "-", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Sky-Stardust.jpg" ),
+            new ProductModel ( "Stardust Marble", "Engineering Marbles", "-", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Stardust-Marble.jpg" ),
+            new ProductModel ( "Statuario", "Engineering Marbles", "-", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Statuario.jpg" ),
+            new ProductModel ( "Titon Beige", "Engineering Marbles", "Beige", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/titon-beige.jpg" ),
+            new ProductModel ( "Titon Bristal", "Engineering Marbles", "Brista", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/titon-bristal.jpg" ),
+            new ProductModel ( "Titon Brown", "Engineering Marbles", "Brown", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/titon-brown.jpg" ),
+            new ProductModel ( "Tosco Fiero", "Engineering Marbles", "-", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Tosco-Fiero.jpg" ),
+            new ProductModel ( "Vanila Wicker", "Engineering Marbles", "Vanila", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Vanila-Wicker.jpg" ),
+            new ProductModel ( "Venus White", "Engineering Marbles", "White", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/venus-white.jpg" ),
+            new ProductModel ( "White Jade", "Engineering Marbles", "White", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/White-Jade.jpg" ),
+            new ProductModel ( "Wind Flower", "Engineering Marbles", "White", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Wind-Flower.jpg" ),
+            new ProductModel ( "Winter White", "Engineering Marbles", "White", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Winter-White.jpg" ),
+            new ProductModel ( "Solar White", "Engineering Marbles", "White", "Composite Marble", "/assets/resources/images/products/engineering-marbles/composite-marble/Solar-White.png" ),
+            new ProductModel ( "Alps White", "Engineering Marbles", "White", "Quartz Stone", "/assets/resources/images/products/engineering-marbles/quartz-stone/alps-white.jpg" ),
+            new ProductModel ( "Amelia", "Engineering Marbles", "-", "Quartz Stone", "/assets/resources/images/products/engineering-marbles/quartz-stone/Amelia.jpg" ),
+            new ProductModel ( "Amezona", "Engineering Marbles", "-", "Quartz Stone", "/assets/resources/images/products/engineering-marbles/quartz-stone/amezona.jpg" ),
+            new ProductModel ( "Antique White", "Engineering Marbles", "White", "Quartz Stone", "/assets/resources/images/products/engineering-marbles/quartz-stone/Antique-White.jpg" ),
+            new ProductModel ( "Arabian Stone", "Engineering Marbles", "-", "Quartz Stone", "/assets/resources/images/products/engineering-marbles/quartz-stone/Arabian-Stone.jpg" ),
+            new ProductModel ( "Arizona", "Engineering Marbles", "-", "Quartz Stone", "/assets/resources/images/products/engineering-marbles/quartz-stone/Arizona.jpg" ),
+            new ProductModel ( "Astone Beige", "Engineering Marbles", "Beige", "Quartz Stone", "/assets/resources/images/products/engineering-marbles/quartz-stone/Astone-Beige.jpg" ),
+            new ProductModel ( "Atlanta", "Engineering Marbles", "-", "Quartz Stone", "/assets/resources/images/products/engineering-marbles/quartz-stone/Atlanta.jpg" ),
+            new ProductModel ( "Bianco Cristallo", "Engineering Marbles", "-", "Quartz Stone", "/assets/resources/images/products/engineering-marbles/quartz-stone/Bianco-Cristallo.jpg" ),
+            new ProductModel ( "Camelia", "Engineering Marbles", "-", "Quartz Stone", "/assets/resources/images/products/engineering-marbles/quartz-stone/Camelia.jpg" ),
+            new ProductModel ( "Carara", "Engineering Marbles", "-", "Quartz Stone", "/assets/resources/images/products/engineering-marbles/quartz-stone/Carara.jpg" ),
+            new ProductModel ( "Cognizant", "Engineering Marbles", "-", "Quartz Stone", "/assets/resources/images/products/engineering-marbles/quartz-stone/Cognizant.png" ),
+            new ProductModel ( "Dantia", "Engineering Marbles", "-", "Quartz Stone", "/assets/resources/images/products/engineering-marbles/quartz-stone/dantia.jpg" ),
+            new ProductModel ( "Emperdor Brown ", "Engineering Marbles", "Brown", "Quartz Stone", "/assets/resources/images/products/engineering-marbles/quartz-stone/Emperdor-Brown.jpg" ),
+            new ProductModel ( "French Brown Marble ", "Engineering Marbles", "Brown", "Quartz Stone", "/assets/resources/images/products/engineering-marbles/quartz-stone/French-Brown-Marble.jpg" ),
+            new ProductModel ( "Gardenia ", "Engineering Marbles", "-", "Quartz Stone", "/assets/resources/images/products/engineering-marbles/quartz-stone/GARDENIA.jpg" ),
+            new ProductModel ( "Glacier Epitoma ", "Engineering Marbles", "-", "Quartz Stone", "/assets/resources/images/products/engineering-marbles/quartz-stone/glacier_epitoma.jpg" ),
+            new ProductModel ( "Honey Brinjal", "Engineering Marbles", "-", "Quartz Stone", "/assets/resources/images/products/engineering-marbles/quartz-stone/Honey-Brinjal.jpg" ),
+            new ProductModel ( "Marmo Gres", "Engineering Marbles", "-", "Quartz Stone", "/assets/resources/images/products/engineering-marbles/quartz-stone/Marmo-Gres.jpg" ),
+            new ProductModel ( "Marquina Flower", "Engineering Marbles", "-", "Quartz Stone", "/assets/resources/images/products/engineering-marbles/quartz-stone/marquina-flower.jpg" ),
+            new ProductModel ( "Nakardo", "Engineering Marbles", "-", "Quartz Stone", "/assets/resources/images/products/engineering-marbles/quartz-stone/nakardo.jpg" )
         ];
     productsList4: ProductModel[] = [
-            new ProductModel ( "Chocolate Pearl Granite", "Peeble and Cobble", "Chocolate", "Brazil", "/assets/resources/images/products/granites/Brazil/Chocolate-Pearl-Granite.jpg" ),
-            new ProductModel ( "Labradorite Granite", "Peeble and Cobble", "Red", "Brazil", "/assets/resources/images/products/granites/Brazil/Labradorite-Granite.jpg" ),
-            new ProductModel ( "Lemurian Blue Granite", "Peeble and Cobble", "Blue", "Brazil", "/assets/resources/images/products/granites/Brazil/Lemurian-Blue-Granite.jpg" )
+        new ProductModel ( "Antique Sandstone Cobble", "Pebble and Cobble", "-", "Cobble", "/assets/resources/images/products/pebble-and-cobble/Antique-Sandstone-Cobble.jpg" ),
+        new ProductModel ( "Black Pebble Stone", "Pebble and Cobble", "Black", "Pebble", "/assets/resources/images/products/pebble-and-cobble/Black-Pebble-Stone.jpg" ),
+        new ProductModel ( "Coffee White Pebbles", "Pebble and Cobble", "White", "Pebble", "/assets/resources/images/products/pebble-and-cobble/Coffee-White-Pebbles.jpg" ),
+        new ProductModel ( "Grey and Pink Cobble Blocks", "Pebble and Cobble", "Grey and Pink", "Cobble", "/assets/resources/images/products/pebble-and-cobble/Grey-and-Pink-Cobble-Blocks.jpg" ),
+        new ProductModel ( "Natural Cobble Stone", "Pebble and Cobble", "-", "Cobble", "/assets/resources/images/products/pebble-and-cobble/Natural-Cobblestone.jpg" ),
+        new ProductModel ( "Natural Pebbles Stone", "Pebble and Cobble", "-", "Pebble", "/assets/resources/images/products/pebble-and-cobble/Natural-Pebbles-Stone.jpeg" ),
+        new ProductModel ( "Rainbow Pebble Stone", "Pebble and Cobble", "Rainbow", "Pebble", "/assets/resources/images/products/pebble-and-cobble/Rainbow-Pebblestone.jpg" ),
+        new ProductModel ( "White Pebble Stone", "Pebble and Cobble", "White", "Pebble", "/assets/resources/images/products/pebble-and-cobble/White-Pebble-Stone.jpg" )
         ];
     getProduct1() {
         return this.productsList1.slice();
@@ -112,6 +184,7 @@ export class ProductService implements OnInit {
     getProduct4() {
         return this.productsList4.slice();
     }
+
     
 
 }

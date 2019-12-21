@@ -9,9 +9,8 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 export class ContactComponent implements OnInit {
 
   signupForm: FormGroup;
-  
   constructor() { }
-
+  pgTitle = 'Contact';
   ngOnInit() {
     this.signupForm = new FormGroup ({
       'fname' : new FormControl(null, Validators.required),
@@ -22,9 +21,18 @@ export class ContactComponent implements OnInit {
     });
   }
 
-  onSubmit() {
-    console.log(this.signupForm);
+  onSubmit() {   
+    const formData = this.signupForm.value;
+    console.log(formData);
   }
+  // onSubmit() {
+  //   this.httpService.post<any>(this.formUrl, this.signupForm).subscribe(
+  //     (res) => console.log(res),
+  //     (err) => console.log(err)
+  //     );
+      
+  //   console.log(this.signupForm);
+  // }
 
   // onAddHobby() {
   //   const control = new FormControl(null, Validators.required);

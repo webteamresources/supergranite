@@ -1,10 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { ProductService } from './../assets/shared/product.service';
 import { ShortenPipe } from './../assets/shared/shorten.pipe';
-import { CarouselModule } from 'ngx-owl-carousel-o';
+import { FilterColor } from './../assets/shared/filter-color.pipe';
+import { CarouselModule  } from 'ngx-owl-carousel-o';
 import 'jquery';
 import 'popper.js';
 import 'bootstrap';
@@ -25,6 +27,17 @@ import { BannerComponent } from './banner/banner.component';
 import { ClientCounterComponent } from './client-counter/client-counter.component';
 import { OurClientComponent } from './our-client/our-client.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { DisclaimerComponent } from './disclaimer/disclaimer.component';
+import { FaqComponent } from './faq/faq.component';
+import { CareerComponent } from './career/career.component';
+import { MarblesComponent } from './products/marbles/marbles.component';
+import { GranitesComponent } from './products/granites/granites.component';
+import { PebbleCobbleComponent } from './products/peeble-and-cobble/pebble-cobble.component';
+import { EngineeringStoneComponent } from './products/engineering-stone/engineering-stone.component';
+import { FilterOptionComponent } from './products/product-listing/filter-option/filter-option.component';
+import { OnHoverDirective } from 'src/assets/shared/on-hover.directive';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -42,16 +55,29 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BannerComponent,
     ClientCounterComponent,
     ShortenPipe,
-    OurClientComponent
+    FilterColor,
+    OurClientComponent,
+    PrivacyPolicyComponent,
+    DisclaimerComponent,
+    FaqComponent,
+    CareerComponent,
+    GranitesComponent,
+    MarblesComponent,
+    EngineeringStoneComponent,
+    PebbleCobbleComponent,
+    OnHoverDirective,
+    FilterOptionComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
     NgbModule,
-    CarouselModule 
+    CarouselModule,
+    FontAwesomeModule
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]

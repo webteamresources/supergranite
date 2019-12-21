@@ -1,0 +1,69 @@
+<!--<section class="hero-wrap hero-wrap-2" style="background-image: url(/assets/resources/images/bg_1.jpg);">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+        <div class="col-md-9 text-center">
+            <h1 class="mb-2 bread">{{ pgTitle }}</h1>
+            <p class="breadcrumbs"><span class="mr-2"><a routerLink="/home">Home ></a></span> <span class="mr-2"><a routerLink="/products">{{pgTitle}} ></a></span> <span>{{productCat2}}</span></p>
+        </div>
+        </div>
+    </div>
+</section>
+<section class="pt-5 pb-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="btn-group" role="group">
+                <a role="button" routerLink="granites" routerLinkActive="active" class="btn btn-outline-primary">Granites</a>
+                <a role="button" routerLink="marbles" routerLinkActive="active" class="btn btn-outline-primary">Marbles</a>
+                <a role="button" routerLink="engineering-stone" routerLinkActive="active" class="btn btn-outline-primary">Engineering Stone</a>
+                <a role="button" routerLink="pebble-and-cobble" routerLinkActive="active" class="btn btn-outline-primary">Pebble and Cobble</a>
+            </div>
+        </div>
+    </div>
+</section>-->
+<!-- <section class="pt-5 pb-5">
+    <div class="container">
+        <div class="row justify-content-start">
+            <div class="col-xl-6 col-md-4 form-group">
+                <label for="colorSpecific">Color Specific</label>
+                <select class="form-control default" id="colorSpecific" name="colorSpecific">
+                    <option value="All" selected="">All</option>  
+                    <option value="{{color}}" *ngFor="let color of colorName">{{color}}</option>
+                </select>
+            </div>
+            <div class="col-xl-6 col-md-4 form-group">  
+                <label for="regionSpecific">Region Specific</label>
+                <select class="form-control default" id="regionSpecific" name="regionSpecific">
+                    <option value="All" selected="">All</option>
+                    <option value="{{region}}" *ngFor="let region of regionName">{{region}}</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</section> -->
+<section class="ftco-section bg-light" >
+    <div class="container">
+        <div class="row justify-content-start mb-5 pb-2">
+            <div class="col-md-4 heading-section">
+                <span class="subheading subheading-with-line"><small class="pr-2 bg-light">{{ pgTitle }}</small></span>
+                <h2 class="mb-4">{{productCat2}}</h2>
+            </div>
+            <div class="col-md-8 pl-md-5 heading-section">
+                <div class="pl-md-4 border-line" [innerHTML]="contentTxt2"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row no-gutters1">
+            <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of productsList2">
+                <div class=" project">
+                    <img [src]="product.imagePath" class="img-fluid product-object-fit" alt="{{product.name}}">
+                    <div class="productText">
+                        <span>{{product.category}}</span> <span> - {{product.colorName}}</span>
+                        <h3><a href="#">{{product.name}}</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
