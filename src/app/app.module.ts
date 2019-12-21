@@ -37,6 +37,7 @@ import { PebbleCobbleComponent } from './products/peeble-and-cobble/pebble-cobbl
 import { EngineeringStoneComponent } from './products/engineering-stone/engineering-stone.component';
 import { FilterOptionComponent } from './products/product-listing/filter-option/filter-option.component';
 import { OnHoverDirective } from 'src/assets/shared/on-hover.directive';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -75,7 +76,8 @@ import { OnHoverDirective } from 'src/assets/shared/on-hover.directive';
     FormsModule,
     ReactiveFormsModule,
     NgbModule,
-    CarouselModule
+    CarouselModule,
+    FontAwesomeModule
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]

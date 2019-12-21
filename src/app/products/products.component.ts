@@ -43,6 +43,17 @@ export class ProductsComponent implements OnInit {
     this.colorName = new Set(this.productsList.map(x => x.colorName).sort());
     this.regionName = new Set(this.productsList.map(x => x.regionName).sort());
   }
+
+  onActivate(event) {
+    let scrollToTop = window.setInterval(() => {
+        let pos = window.pageYOffset;
+        if (pos > 0) {
+            window.scrollTo(0, pos - 50); // how far to scroll on each step
+        } else {
+            window.clearInterval(scrollToTop);
+        }
+    }, 16);
+  }
 //   onSelect(selectedColor) {  
 //     selectedColor = null;
 //     for (var i = 0; i < this.colorName.length; i++)

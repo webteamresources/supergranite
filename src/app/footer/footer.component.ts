@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
-import { map } from 'rxjs/operators';
+import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-footer',
@@ -13,7 +15,9 @@ export class FooterComponent implements OnInit {
   homeData = [];
   productData = [];
   otherData: any;
-
+  faPhoneAlt = faPhoneAlt;
+  faEnvelope = faEnvelope;
+  faArrowRight = faArrowRight;
   constructor(private http: HttpClient) { }
 
   ngOnInit() {    
