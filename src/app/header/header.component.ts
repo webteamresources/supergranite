@@ -6,11 +6,12 @@ import { Component, OnInit, ViewChild, ElementRef, HostListener } from '@angular
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  @ViewChild('stickyMenu', {static: true}) menuElement: ElementRef;
+  
+  @ViewChild('stickyMenu', {static: false}) menuElement: ElementRef;
 
   sticky: boolean = false;
   elementPosition: any;
-  
+
   constructor() { }
 
   ngOnInit() {
@@ -22,7 +23,7 @@ export class HeaderComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event'])
     handleScroll(){
-      const windowScroll = window.pageYOffset - 130;
+      const windowScroll = window.pageYOffset - 100;
       if(windowScroll >= this.elementPosition){
         this.sticky = true;
       } else {
