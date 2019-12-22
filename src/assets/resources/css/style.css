@@ -2816,7 +2816,7 @@ a:hover, a:focus { text-decoration: none; color: #0033c7; outline: none !importa
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 { line-height: 1.5; color: rgba(0, 0, 0, 0.8); font-weight: 400; }
 .text-primary { color: #0033c7 !important; }
-.ftco-navbar-light { background: transparent !important; z-index: 3; padding: 0; }
+.ftco-navbar-light { background: #fff !important; z-index: 3; padding: 0; }
 @media (max-width: 991.98px) { 
 .ftco-navbar-light { background: #ffffff !important; position: relative; top: 0; padding: 10px 15px;} 
 }
@@ -3386,7 +3386,7 @@ border-image:none;border-left:0 none;border-right:0 none;border-top:0 none;float
 }
 @media (max-width: 767.98px) { 
 .about-image { height: 400px; margin-bottom: 30px; }
-.navbar-collapse { position: absolute; left: 0; right: 0; background: #fff; top: 100%; }
+.navbar-collapse { /*position: absolute;*/ left: 0; right: 0; background: #fff; top: 100%; }
 .ftco-navbar-light .navbar-nav > .nav-item > .nav-link, .dropdown > .dropdown-menu > li > a, .dropdown.show > .dropdown-menu > li > a { padding: 0.9rem 1.8rem; background:#262927; text-align: center; color:#fff;}
 .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover, .dropdown > .dropdown-menu > li > a:hover, .dropdown.show > .dropdown-menu > li > a:hover { background:#000; color: #fff;}
 }
@@ -3418,3 +3418,9 @@ p { margin-bottom: 0.5rem;}
 .home-slider .slider-item .container {max-width: 95%;}
 .icon-link { padding: 0 0 0 20px; display: inline-block;}
 .icon-link fa-icon { margin: 0 0 0 -20px;}
+.sticky{
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
