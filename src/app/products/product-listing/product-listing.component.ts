@@ -56,16 +56,21 @@ export class ProductListingComponent implements OnInit {
   this.productsList2 = this.productService.getProduct2();
   this.productsList3 = this.productService.getProduct3();
   this.productsList4 = this.productService.getProduct4();
-  
   this.productsList = this.productsList1.concat(this.productsList2, this.productsList3, this.productsList4);
   this.colorNames = this.productsList.map(x => x.colorName);
   };
 
   childCurrentVal:string = '';
+  childCurrentRegionVal:string = '';
   childSearchedVal:string = '';
   getOutputVal(selected: string) {
       if(selected) {
         this.childCurrentVal = selected;
+      }
+  }
+  getOutputRegionVal(selected: string) {
+      if(selected) {
+        this.childCurrentRegionVal = selected;
       }
   }
   getSearchVal(selected: string) {

@@ -20,6 +20,7 @@ export class FilterOptionComponent implements OnInit {
   regionName;
   @Output() colorSearched =  new EventEmitter<string>();
   @Output() outputToParent =  new EventEmitter<string>();
+  @Output() outputRegionToParent =  new EventEmitter<string>();
 
   regionSelected;
 
@@ -37,6 +38,10 @@ export class FilterOptionComponent implements OnInit {
   
   onColorSelect(selected: string) {
     this.outputToParent.emit(selected);
+  }
+  
+  onRegionSelect(selected: string) {
+    this.outputRegionToParent.emit(selected);
   }
   onColorSearched(selected: string) {
     this.colorSearched.emit(selected);

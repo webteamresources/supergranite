@@ -17,7 +17,7 @@
             </div>
             <div class="col-xl-4 col-md-4 form-group">  
                 <label for="colorSpecific">Search</label>
-                <input type="text" id="colorSpecific" name="colorSpecific"  class="form-control default" (keyup)="onColorSearched($event.target.value)">
+                <input type="text" id="colorSpecific" name="colorSpecific"  class="form-control default" ng-keypress="onColorSearched($event.target.value)">
             </div>
         </div>
     </div>
