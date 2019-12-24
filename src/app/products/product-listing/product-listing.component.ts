@@ -75,7 +75,7 @@ export class ProductListingComponent implements OnInit {
   }
   getSearchVal(selected: string) {
       if(selected) {
-        this.childSearchedVal = selected;
+        this.childSearchedVal = selected.toLowerCase();
       }
   }
 

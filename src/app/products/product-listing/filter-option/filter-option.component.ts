@@ -44,7 +44,7 @@ export class FilterOptionComponent implements OnInit {
     this.outputRegionToParent.emit(selected);
   }
   onColorSearched(selected: string) {
-    this.colorSearched.emit(selected);
+    this.colorSearched.emit(selected.toLowerCase());
   }
 
 
