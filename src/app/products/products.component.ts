@@ -22,15 +22,4 @@ export class ProductsComponent implements OnInit {
         }
     }, 16);
   }
-//   onSelect(selectedColor) {  
-//     selectedColor = null;
-//     for (var i = 0; i < this.colorName.length; i++)
-//     {
-//       if (this.selectedColor[i] == this.colorName) {
-//         this.selectedColor = this.selectedColor[i];
-//       }
-//     }
-//     console.log(selectedColor);
-// }    
-
 }

@@ -1,8 +1,9 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { ProductService } from './../../../assets/shared/product.service';
+import { Component, OnInit } from '@angular/core';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 
-import { Router } from '@angular/router';
+import { ProductService } from 'src/assets/shared/product.service';
 import { ProductDataModel } from 'src/assets/shared/ProductDataModel';
+import { ProductModel } from 'src/assets/shared/product.model';
 
 @Component({
   selector: 'app-product-listing',
@@ -10,23 +11,22 @@ import { ProductDataModel } from 'src/assets/shared/ProductDataModel';
   styleUrls: ['./product-listing.component.css']
 })
 export class ProductListingComponent implements OnInit {
-  
-  constructor(private productService: ProductService) { }
-  
+  constructor(private productService: ProductService) { } 
   productsList: ProductDataModel[];
-  
-  ngOnInit() {
-    this.storeProduct();
-    console.log(this.storeProduct());
-    //console.log(this.productService.getProduct());
-  };
+  productsDetails: ProductModel[];
+  ngOnInit() {     
+    this.fetchProducts();
+  }
 
   childCurrentVal:string = '';
   childCurrentRegionVal:string = '';
   childSearchedVal:string = '';
-  
-  private storeProduct() {
-    this.productService.getProduct();
+
+  private fetchProducts() {
+    this.productService.getProduct().subscribe(data => {
+      this.productsList = data['productDetails'];
+      this.productsDetails = this.productsList['product'];
+    });
   }
 
   getOutputVal(selected: string) {
@@ -44,5 +44,4 @@ export class ProductListingComponent implements OnInit {
         this.childSearchedVal = selected.toLowerCase();
       }
   }
-
 }

@@ -7,6 +7,7 @@ import { ProductService } from './../assets/shared/product.service';
 import { ShortenPipe } from './../assets/shared/shorten.pipe';
 import { FilterColor } from './../assets/shared/filter-color.pipe';
 import { CarouselModule  } from 'ngx-owl-carousel-o';
+import {BreadcrumbModule} from 'xng-breadcrumb';
 import 'jquery';
 import 'popper.js';
 import 'bootstrap';
@@ -38,6 +39,7 @@ import { EngineeringStoneComponent } from './products/engineering-stone/engineer
 import { FilterOptionComponent } from './products/product-listing/filter-option/filter-option.component';
 import { OnHoverDirective } from 'src/assets/shared/on-hover.directive';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +68,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     EngineeringStoneComponent,
     PebbleCobbleComponent,
     OnHoverDirective,
-    FilterOptionComponent
+    FilterOptionComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -77,7 +80,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ReactiveFormsModule,
     NgbModule,
     CarouselModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    BreadcrumbModule
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]

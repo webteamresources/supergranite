@@ -16,26 +16,28 @@ import { MarblesComponent } from './products/marbles/marbles.component';
 import { PebbleCobbleComponent } from './products/peeble-and-cobble/pebble-cobble.component';
 import { EngineeringStoneComponent } from './products/engineering-stone/engineering-stone.component';
 import { GranitesComponent } from './products/granites/granites.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'/home', pathMatch:'full'},
-  {path:'home', component:HomeComponent},
-  {path:'about', component:AboutComponent},
+  {path:'home', component:HomeComponent, data: { breadcrumb: 'Home' }},
+  {path:'about', component:AboutComponent, data: { breadcrumb: 'About' }},
   {path:'products', component:ProductsComponent, children:[
     {path:'', component:ProductListingComponent, pathMatch:'full'},
-    {path:'granites', component:GranitesComponent},
-    {path:'marbles', component:MarblesComponent},
-    {path:'engineering-stone', component:EngineeringStoneComponent},
-    {path:'pebble-and-cobble', component:PebbleCobbleComponent},
-    {path:'products-details', component:ProductDetailsComponent}
+    {path:'granites', component:GranitesComponent, data: { breadcrumb: 'Granites' }},
+    {path:'marbles', component:MarblesComponent, data: { breadcrumb: 'Marbles' }},
+    {path:'engineering-stone', component:EngineeringStoneComponent, data: { breadcrumb: 'Engineering Stone'}},
+    {path:'pebble-and-cobble', component:PebbleCobbleComponent, data: { breadcrumb: 'Pebble and Cobble' }},
+    {path:'products-details', component:ProductDetailsComponent, data: { breadcrumb: 'Products Details' }}
   ]},
-  {path:'products-details', component:ProductDetailsComponent},
-  {path:'projects', component:ProjectsComponent},
-  {path:'career', component:CareerComponent},
-  {path:'contact', component:ContactComponent},
-  {path:'privacy-policy', component:PrivacyPolicyComponent},
-  {path:'disclaimer', component:DisclaimerComponent},
-  {path:'faq', component: FaqComponent}
+  
+  {path:'projects', component:ProjectsComponent, data: { breadcrumb: 'Projects'}},
+  {path:'career', component:CareerComponent, data: { breadcrumb: 'Career'}},
+  {path:'contact', component:ContactComponent, data: { breadcrumb: 'Contact'}},
+  {path:'privacy-policy', component:PrivacyPolicyComponent, data: { breadcrumb: 'Privacy Policy'}},
+  {path:'disclaimer', component:DisclaimerComponent, data: { breadcrumb: 'Disclaimer'}},
+  {path:'faq', component: FaqComponent, data: { breadcrumb: 'faqs'}},  
+  { path: '**', pathMatch: 'full', component: PageNotFoundComponent, data: { breadcrumb: 'faqs'} }
 ];
 
 @NgModule({

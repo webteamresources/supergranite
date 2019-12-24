@@ -1,7 +1,5 @@
 import { Component, OnInit, NgModule } from '@angular/core';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule, OwlOptions  } from 'ngx-owl-carousel-o';
-import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { ProductService } from './../../assets/shared/product.service';
 import { ProductModel } from './../../assets/shared/product.model';
 import { ProductDataModel } from 'src/assets/shared/ProductDataModel';
@@ -82,11 +80,17 @@ export class HomeComponent implements OnInit {
   }
 
   
-  constructor(private productService: ProductService) { }
+  constructor(private productService:ProductService) { }
   
-  productsList: ProductDataModel[];  
-  ngOnInit() {
-  //this.productsList = this.productService.getProduct();
-  };
-
+  productsContent = [];
+  productsList: ProductDataModel[];
+  productsDetails: ProductModel[];  
+  ngOnInit() {    
+    this.productService.getProduct().subscribe(
+      data => {
+        this.productsList = data['productDetails'];
+        this.productsDetails = this.productsList['product'];
+      }
+    );
+  }
 }
