@@ -67,7 +67,7 @@
                                         <input type="text" class="form-control" [formControlName]="i">
                                     </div>
                                 </div>-->
-                                <div class="col-md-12">
+                                <div class="col-md-12" *ngIf="!signupForm.valid">
                                     <p class="text-muted"><strong>*</strong> These fields are required.</p>
                                 </div>
                                 <div class="form-group">

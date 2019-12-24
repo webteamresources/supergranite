@@ -29,13 +29,13 @@ const routes: Routes = [
     {path:'pebble-and-cobble', component:PebbleCobbleComponent},
     {path:'products-details', component:ProductDetailsComponent}
   ]},
-  
+  {path:'products-details', component:ProductDetailsComponent},
   {path:'projects', component:ProjectsComponent},
   {path:'career', component:CareerComponent},
   {path:'contact', component:ContactComponent},
   {path:'privacy-policy', component:PrivacyPolicyComponent},
   {path:'disclaimer', component:DisclaimerComponent},
-  {path:'faq', component: FaqComponent},
+  {path:'faq', component: FaqComponent}
 ];
 
 @NgModule({

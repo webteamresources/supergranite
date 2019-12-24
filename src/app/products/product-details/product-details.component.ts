@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductService } from './../../../assets/shared/product.service';
+import { ProductDataModel } from './../../../assets/shared/ProductDataModel';
+import { ProductModel } from 'src/assets/shared/product.model';
 
 @Component({
   selector: 'app-product-details',
@@ -7,9 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductDetailsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private productService: ProductService) { }
 
-  ngOnInit() {
+  configUrl = '../../../assets/content/product-data.json';
+  productsContent = [];
+  productsList: ProductDataModel[];
+  productsDetails: ProductModel[];
+  colorName;
+  regionName;
+
+  ngOnInit(){
+    //this.productsList = this.productService.getProduct();
   }
 
 }

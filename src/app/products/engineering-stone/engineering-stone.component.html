@@ -1,23 +1,23 @@
-<section class="ftco-section bg-light" >
+<section class="ftco-section bg-light" *ngFor="let product of productsList[0]">
     <div class="container">
         <div class="row justify-content-start mb-5 pb-2">
             <div class="col-md-4 heading-section">
                 <span class="subheading subheading-with-line"><small class="pr-2 bg-light">{{ pgTitle }}</small></span>
-                <h2 class="mb-4">{{productCat3}}</h2>
+                <h2 class="mb-4">{{ product.productCat}}</h2>
             </div>
             <div class="col-md-8 pl-md-5 heading-section">
-                <div class="pl-md-4 border-line" [innerHTML]="contentTxt3"></div>
+                <div class="pl-md-4 border-line" [innerHTML]="product.contentTxt"></div>
             </div>
         </div>
     </div>
     <div class="container">
         <div class="row no-gutters1">
-            <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let product of productsList3">
+            <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let item of product.product | filterColor:childCurrentVal:'item.colorName'| filterColor:childCurrentRegionVal:'item.regionName' | filterColor:childSearchedVal:'item.colorName' | filterColor:childSearchedVal:'item.name' | filterColor:childSearchedVal:'item.category' | filterColor:childSearchedVal:'item.regionName'"><!----> 
                 <div class=" project">
-                    <img [src]="product.imagePath" class="img-fluid product-object-fit" alt="{{product.name}}">
+                    <img [src]="item.imagePath" class="img-fluid product-object-fit" alt="{{item.name}}">
                     <div class="productText">
-                        <span>{{product.category}}</span> <span> - {{product.colorName}}</span>
-                        <h3><a href="#">{{product.name}}</a></h3>
+                        <span>{{item.category}}</span> <span> - {{item.colorName}}</span> <small> - {{item.regionName}}</small>
+                        <h3><a href="#">{{item.name}}</a></h3>
                     </div>
                 </div>
             </div>

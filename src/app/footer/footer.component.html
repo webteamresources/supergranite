@@ -3,16 +3,16 @@
 <div class="container">
     <div class="row mb-5">
         <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
+            <div class="ftco-footer-widget mb-4" *ngFor="let data of otherData">
                 <h2 class="ftco-heading-2">Super Granites and Marbles</h2>
-                <p>Super Granites and Marbles is a well renowned and recognized export house engaged in supplying quality Indian granite across the Nation. With a rich experience of more than 40 years in sourcing, manufacturing and exporting Indian granite products... <br> <a routerLink="about" class="btn-custom text-white">Know More <span class="ion-ios-arrow-forward"></span></a></p>
+                <p>Super Granites and Marbles is engaged in supplying quality Indian granite across the Nation. With a rich experience of more than 40 years in sourcing, manufacturing and exporting Indian granite products... <br> <a routerLink="about" class="btn-custom text-white">Know More </a> <fa-icon [icon]="faArrowRight"></fa-icon></p>
             </div>
         </div>
         <div class="col-md">
             <div class="ftco-footer-widget mb-4 ml-md-4">
                 <h2 class="ftco-heading-2">Links</h2>
                 <ul class="list-unstyled">
-                    <li *ngFor="let data of homeData"><a [routerLink]="data.pgUrl"><span class="icon-long-arrow-right mr-2"></span>{{data.pgTl}}</a></li>
+                    <li *ngFor="let data of homeData"><a [routerLink]="data.pgUrl"> <fa-icon [icon]="faArrowRight"></fa-icon> {{data.pgTl}}</a></li>
                 </ul>
             </div>
         </div>
@@ -20,15 +20,15 @@
             <div class="ftco-footer-widget mb-4">
                 <h2 class="ftco-heading-2">Products</h2>
                 <ul class="list-unstyled">
-                    <li *ngFor="let data of productData"><a [routerLink]="data.pgUrl"><span class="icon-long-arrow-right mr-2"></span>{{data.pgTl}}</a></li>
+                    <li *ngFor="let data of productData"><a [routerLink]="data.pgUrl" class="icon-link"> <fa-icon [icon]="faArrowRight"></fa-icon> {{data.pgTl}}</a></li>
                 </ul>
             </div>
         </div>
         <div class="col-md" *ngFor="let data of otherData">
             <div class="ftco-footer-widget mb-4">
                 <h2 class="ftco-heading-2">Contact Details</h2>
-                <p><a href="tel:09820092602"> <span class="icon-phone"></span> {{data.contactNumber}}</a></p>
-                <p><a href="mailto:{{data.emailId}}"> <span class="icon-envelope"></span> {{data.emailId}}</a></p>
+                <p><a href="tel:09820092602" class="icon-link"> <fa-icon [icon]="faPhoneAlt"></fa-icon> {{data.contactNumber}}</a></p>
+                <p><a href="mailto:{{data.emailId}}" class="icon-link"> <fa-icon [icon]="faEnvelope"></fa-icon> {{data.emailId}}</a></p>
                 <p><b>Address :</b> {{data.address}}</p>
             </div>
         </div>
