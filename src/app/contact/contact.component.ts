@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 
 @Component({
   selector: 'app-contact',
@@ -8,34 +8,44 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-  constructor(private http: HttpClient) { }
+
+  signupForm: FormGroup;
+  url = 'https://supergranitesandmarbles.firebaseio.com/formdata.json';
+
+  constructor(private http:HttpClient) { }
   pgTitle = 'Contact';
+  formSubmitted;
   ngOnInit() {
+    this.formSubmitted = false;
     this.signupForm = new FormGroup ({
       'fname' : new FormControl(null, Validators.required),
       'lname' : new FormControl(null, Validators.required),
-      'subject' : new FormControl(null),
-      'message' : new FormControl(null, Validators.required),
+      'subject' : new FormControl(null, Validators.required),
+      'phone' : new FormControl(null, Validators.required),
+      'email' : new FormControl(null, Validators.required),
+      'message' : new FormControl(null)
       //'hobbies' : new FormArray([])
     });
   }
 
-  PHPUrl = '../../assets/contact.php';
-  signupForm: FormGroup;
+  onSubmit() {
+    const formdata = this.signupForm.value;
+    console.log(formdata);
 
-  onSubmit() {   
-    const formData = this.signupForm.value;
-    console.log(formData);
+    this.http.post(this.url, formdata)
+    .subscribe(
+      response => {
+        this.formSubmitted = true;
+        console.log(response);
+      },
+      (err: HttpErrorResponse) => {
+        this.formSubmitted = false;
+        console.log (err.message);
+      }
+    )
 
-    this.http.post(this.PHPUrl, formData)
-      .subscribe(
-        (res:Response) => {
-          console.log(res.json());
-        },
-        err => {
-          console.log("Error occured");
-        }
-      );
+
+    
   }
   // onSubmit() {
   //   this.httpService.post<any>(this.formUrl, this.signupForm).subscribe(

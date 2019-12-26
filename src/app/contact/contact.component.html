@@ -42,43 +42,39 @@
                   <div class="col-md-6 p-5 order-md-last">   
                     <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">                   
                           <div class="row">
-                            <div class="col-md-12">    
+                            <div class="col-md-12" *ngIf="!formSubmitted">    
                                 <div class="form-group">
-                                    <input id="form_firstname" type="text" class="form-control" formControlName="fname" name="name" placeholder="Please enter your firstname *" data-error="Firstname is required.">
-                                    <div class="help-block with-errors" *ngIf="!signupForm.get('fname').valid && signupForm.get('fname').touched">Firstname is required.</div>
+                                    <input id="form_firstname" type="text" class="form-control" formControlName="fname" name="name" placeholder="Please enter your First Name *">
+                                    <div class="help-block with-errors" *ngIf="!signupForm.get('fname').valid && signupForm.get('fname').touched">First Name is required.</div>
                                 </div>
                                 <div class="form-group">
-                                    <input id="form_lastname" type="text" class="form-control" formControlName="lname" name="surname" placeholder="Please enter your lastname *" data-error="Lastname is required.">
-                                    <div class="help-block with-errors" *ngIf="!signupForm.get('lname').valid && signupForm.get('lname').touched">Lastname is required.</div>
+                                    <input id="form_lastname" type="text" class="form-control" formControlName="lname" name="surname" placeholder="Please enter your Last Name *">
+                                    <div class="help-block with-errors" *ngIf="!signupForm.get('lname').valid && signupForm.get('lname').touched">Last Name is required.</div>
                                 </div>
                                 <div class="form-group">
-                                    <input id="form_need" type="text" class="form-control" formControlName="subject" name="subject" placeholder="Subject">
+                                    <input id="form_subject" type="text" class="form-control" formControlName="subject" name="subject" placeholder="Subject">
+                                    <div class="help-block with-errors" *ngIf="!signupForm.get('subject').valid && signupForm.get('subject').touched">Subject is required.</div>
                                 </div>
                                 <div class="form-group">
-                                    <textarea id="form_message" class="form-control" formControlName="message" name="message" placeholder="Message for me *" rows="4"  data-error="Please, leave us a message."></textarea>
-                                    <div class="help-block with-errors" *ngIf="!signupForm.get('message').valid && signupForm.get('message').touched">Please, leave us a message.</div>
-                                </div>                                
-                                <!--<div class="form-group" formArrayName="hobbies">
-                                    <h4>Your Hobbies</h4>
-                                    <button type="button" class="btn btn-primary py-2 px-3" (click)="onAddHobby()">Add Hobbies</button>
-                                    <div 
-                                    class="form-group" 
-                                    *ngFor="let hobbyControl of signupForm.get('hobbies').controls; let i = index">
-                                        <input type="text" class="form-control" [formControlName]="i">
-                                    </div>
-                                </div>-->
-                                <div class="col-md-12">
-                                    <p class="text-muted"><strong>*</strong> These fields are required.</p>
+                                    <input id="form_phone" type="number" class="form-control" formControlName="phone" name="phone" placeholder="Phone Number">
+                                    <div class="help-block with-errors" *ngIf="!signupForm.get('phone').valid && signupForm.get('phone').touched">Phone Number is required.</div>
+                                </div>
+                                <div class="form-group">
+                                    <input id="form_email" type="email" class="form-control" formControlName="email" name="email" placeholder="Email">
+                                    <div class="help-block with-errors" *ngIf="!signupForm.get('email').valid && signupForm.get('email').touched">Email is required.</div>
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="form_message" class="form-control" formControlName="message" name="message" placeholder="Message for us" rows="4"></textarea>
                                 </div>
                                 <div class="form-group">
                                     <button type="submit" class="btn btn-primary py-3 px-5" [disabled]="!signupForm.valid">Send Message</button>
                                 </div>
                             </div>
-                            <!-- <div class="col-md-12">                                
+                            <div class="col-md-12" *ngIf="formSubmitted">                                
                               <h2>
                                 You have successfully submitted the form. We will get back to you shortly. Meanwhile to check our latest products <a routerLink="../products">Click Here</a>.
                               </h2>
-                            </div> -->
+                            </div>
                         </div>
                     </form>
                   </div>
