@@ -21,7 +21,7 @@ export class HeaderComponent implements OnInit {
     this.elementPosition = this.menuElement.nativeElement.offsetTop;
   }
 
-  @HostListener('window:scroll', ['$event'])
+  @HostListener('window:scroll', [''])
     handleScroll(){
       const windowScroll = window.pageYOffset - 100;
       if(windowScroll >= this.elementPosition){

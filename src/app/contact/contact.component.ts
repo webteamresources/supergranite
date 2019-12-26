@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-contact',
@@ -7,9 +8,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-
-  signupForm: FormGroup;
-  constructor() { }
+  constructor(private http: HttpClient) { }
   pgTitle = 'Contact';
   ngOnInit() {
     this.signupForm = new FormGroup ({
@@ -21,9 +20,22 @@ export class ContactComponent implements OnInit {
     });
   }
 
+  PHPUrl = '../../assets/contact.php';
+  signupForm: FormGroup;
+
   onSubmit() {   
     const formData = this.signupForm.value;
     console.log(formData);
+
+    this.http.post(this.PHPUrl, formData)
+      .subscribe(
+        (res:Response) => {
+          console.log(res.json());
+        },
+        err => {
+          console.log("Error occured");
+        }
+      );
   }
   // onSubmit() {
   //   this.httpService.post<any>(this.formUrl, this.signupForm).subscribe(
