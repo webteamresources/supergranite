@@ -15,6 +15,15 @@
                   <option value="{{region}}" *ngFor="let region of regionName">{{region}}</option>
                 </select>
             </div>
+            <div class="col-xl-4 col-md-4 form-group">
+                <label for="sizeSpecific">Products Size</label>
+                <select class="form-control default" id="sizeSpecific" name="sizeSpecific" (change)="onSizeChanged($event.target.value)">
+                  <option value="default" selected="">Select size</option>
+                  <option value="small">Small</option>
+                  <option value="medium">Medium</option>
+                  <option value="large">Large</option>
+                </select>
+            </div>
             <!-- <div class="col-xl-4 col-md-4 form-group">  
                 <label for="searchSpecific">Search</label>
                 <input type="search" id="searchSpecific" name="searchSpecific"  class="form-control default" #searchBox (keyup)="onColorSearched(searchBox.value)">

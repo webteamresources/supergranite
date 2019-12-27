@@ -38,6 +38,7 @@ export class ProductListingComponent implements OnInit {
 
   colorNames;
   selectedName: string;
+  classname;
   
   ngOnInit() {    
     this.httpService.get(this.configUrl).subscribe(
@@ -58,11 +59,23 @@ export class ProductListingComponent implements OnInit {
   this.productsList4 = this.productService.getProduct4();
   this.productsList = this.productsList1.concat(this.productsList2, this.productsList3, this.productsList4);
   this.colorNames = this.productsList.map(x => x.colorName);
-  };
 
+
+  if(this.childSizeVal === 'small') {
+      this.classname = 'col-md-3 col-lg-3'
+  }
+  else if(this.childSizeVal === 'large') {
+      this.classname = 'col-md-6 col-lg-6'
+  }
+  else {
+      this.classname = 'col-md-6 col-lg-4'
+  }
+
+  };
   childCurrentVal:string = '';
   childCurrentRegionVal:string = '';
   childSearchedVal:string = '';
+  childSizeVal:string = '';
   getOutputVal(selected: string) {
       if(selected) {
         this.childCurrentVal = selected;
@@ -76,6 +89,20 @@ export class ProductListingComponent implements OnInit {
   getSearchVal(selected: string) {
       if(selected) {
         this.childSearchedVal = selected;
+      }
+  }
+  getOutputSizeVal(selected: string) {
+      if(selected) {
+        this.childSizeVal = selected;
+        if(this.childSizeVal == 'small') {
+          this.classname = 'col-md-3 col-lg-3'
+        }
+        else if(this.childSizeVal == 'large') {
+            this.classname = 'col-md-6 col-lg-6'
+        }
+        else {
+            this.classname = 'col-md-6 col-lg-4'
+        }
       }
   }
 
