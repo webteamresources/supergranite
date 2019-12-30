@@ -3366,7 +3366,8 @@ border-image:none;border-left:0 none;border-right:0 none;border-top:0 none;float
 .breadcrumbs .xng-breadcrumb-root { color: #fff; }
 .breadcrumbs .xng-breadcrumb-trail,
 .hero-wrap.hero-wrap-2 .slider-text .breadcrumbs span a { display: inline-block; border-bottom: 2px solid rgba(255, 255, 255, 0.1); margin:0; color: #fff;}
-
+.col-md-3.col-lg-3 .product-object-fit { min-height: 300px; max-height: 300px;}
+.col-md-3.col-lg-3 .productText h3 {font-size: 1.25rem;}
 
 
 @media (max-width: 576px) {
@@ -3418,3 +3419,4 @@ p { margin-bottom: 0.5rem;}
 .ftco-navbar-light .navbar-nav > .nav-item > a:hover { color: #f0bf43; }
 .ftco-navbar-light .navbar-nav > .nav-item.active > a { color: #f0bf43 !important; }
 }
+

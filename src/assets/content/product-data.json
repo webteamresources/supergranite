@@ -14,15 +14,13 @@
                 { "name": "Brown Pearl Granite",  "category": "Granites", "colorName": "Brown", "regionName": "North India", "imagePath":"/assets/resources/images/products/granites/North-Indian-Granites/Brown-Pearl-Granite.jpg" } ,
                 { "name": "Caliber Brown Granite",  "category": "Granites", "colorName": "Brown", "regionName": "North India", "imagePath":"/assets/resources/images/products/granites/North-Indian-Granites/Caliber-Brown-Granite.jpg" } ,
                 { "name": "Cherry Brown Granite ",  "category": "Granites", "colorName": "Brown", "regionName": "North India", "imagePath":"/assets/resources/images/products/granites/North-Indian-Granites/Cherry-Brown-Granite.jpg" } ,
-                { "name": "Fish Brown Granite ",  "category": "Granites", "colorName": "Brown", "regionName": "North India", "imagePath":"/assets/resources/images/products/granites/North-Indian-Granites/Fish-Brown-Granite.jpg"} ,
-                { "name": "French Brown Granite",  "category": "Granites", "colorName": "Brown", "regionName": "North India", "imagePath":"/assets/resources/images/products/granites/North-Indian-Granites/French-Brown-Granite.jpg" } ,
+                
                 { "name": "G D Brown Granite",  "category": "Granites", "colorName": "Brown", "regionName": "North India", "imagePath":"/assets/resources/images/products/granites/North-Indian-Granites/G-D-Brown-Granite.jpg"} ,
                 { "name": "Green Pearl Granite ",  "category": "Granites", "colorName": "Green", "regionName": "North India", "imagePath":"/assets/resources/images/products/granites/North-Indian-Granites/Green-Pearl-Granite.jpg"} ,
-                { "name": "Honey Brown Granite",  "category": "Granites", "colorName": "Brown", "regionName": "North India", "imagePath":"/assets/resources/images/products/granites/North-Indian-Granites/Honey-Brown-Granite.jpg" } ,
-                { "name": "Icy Blue Granite",  "category": "Granites", "colorName": "Blue", "regionName": "North India", "imagePath":"/assets/resources/images/products/granites/North-Indian-Granites/Icy-Blue-Granite.jpg" } ,
+                
                 { "name": "Jhansi Red Granite",  "category": "Granites", "colorName": "Red", "regionName": "North India", "imagePath":"/assets/resources/images/products/granites/North-Indian-Granites/Jhansi-Red-Granite.jpg" } ,
                 { "name": "Lakha Red Granite",  "category": "Granites", "colorName": "Red", "regionName": "North India", "imagePath":"/assets/resources/images/products/granites/North-Indian-Granites/Lakha-Red-Granite.jpg" } ,
-                { "name": "Majestic Brown Granite",  "category": "Granites", "colorName": "Brown", "regionName": "North India", "imagePath":"/assets/resources/images/products/granites/North-Indian-Granites/Majestic_Brown_Granite.jpg" } ,
+                
                 { "name": "Merry Gold Granite ",  "category": "Granites", "colorName": "Gold", "regionName": "North India", "imagePath":"/assets/resources/images/products/granites/North-Indian-Granites/Merry-Gold-Granite.jpg" } ,
                 { "name": "Nasoli Gold Granite  ",  "category": "Granites", "colorName": "Gold", "regionName": "North India", "imagePath":"/assets/resources/images/products/granites/North-Indian-Granites/Nasoli-Gold-Granite.jpg" } ,
                 { "name": "Nosra Gold Granite",  "category": "Granites", "colorName": "Gold", "regionName": "North India", "imagePath":"/assets/resources/images/products/granites/North-Indian-Granites/Nosra-Gold-Granite.jpg" } ,
@@ -31,7 +29,7 @@
                 { "name": "Rajashree Red Granite",  "category": "Granites", "colorName": "Red", "regionName": "North India", "imagePath":"/assets/resources/images/products/granites/North-Indian-Granites/Rajashree-Red-Granite.jpg" } ,
                 { "name": "Rolite Brown Granite",  "category": "Granites", "colorName": "Brown", "regionName": "North India", "imagePath":"/assets/resources/images/products/granites/North-Indian-Granites/Rolite-Brown-Granite.jpg" } ,
                 { "name": "Rosy Pink Granite",  "category": "Granites", "colorName": "Pink", "regionName": "North India", "imagePath":"/assets/resources/images/products/granites/North-Indian-Granites/Rosy-Pink-Granite.jpg" } ,
-                { "name": "Royal Brown Granite",  "category": "Granites", "colorName": "Brown", "regionName": "North India", "imagePath":"/assets/resources/images/products/granites/North-Indian-Granites/Royal-Brown-Granite.jpg" } ,
+                
                 { "name": "Royal Cream Granite",  "category": "Granites", "colorName": "Cream", "regionName": "North India", "imagePath":"/assets/resources/images/products/granites/North-Indian-Granites/Royal-Cream-Granite.jpg" } ,
                 { "name": "Royal Pink Granite",  "category": "Granites", "colorName": "Pink", "regionName": "North India", "imagePath":"/assets/resources/images/products/granites/North-Indian-Granites/Royal-Pink-Granite.jpg" } ,
                 { "name": "Z Brown Granite",  "category": "Granites", "colorName": "Brown", "regionName": "North India", "imagePath":"/assets/resources/images/products/granites/North-Indian-Granites/Z-Brown-Granite.jpg" } ,
@@ -40,8 +38,7 @@
                 { "name": "Brown Pearl Granite",  "category": "Granites", "colorName": "Brown", "regionName": "Norway", "imagePath":"/assets/resources/images/products/granites/Norway/Brown-Pearl-Granite.jpg" } ,
                 { "name": "Adhunik Brown Granite",  "category": "Granites", "colorName": "Brown", "regionName": "South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/Adhunik-Brown-Granite.jpg" } ,
                 { "name": "Antique Fantasy Granite",  "category": "Granites", "colorName": "-", "regionName": "South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/Antique_Fantasy_Granite.jpg" } ,
-                { "name": "Arcateak Granite",  "category": "Granites", "colorName": "-", "regionName": "South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/Arcateak-Granite.jpg" } ,
-                { "name": "Asian Sky Granite",  "category": "Granites", "colorName": "-", "regionName": "South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/Asian-Sky-Granite.jpg" } ,
+                
                 { "name": "Asian Top Granite",  "category": "Granites", "colorName": "-", "regionName": "South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/Asian-Top-Granite.jpg" } ,
                 { "name": "Baltic Rain Granite",  "category": "Granites", "colorName": "-", "regionName": "South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/Baltic-Rain-Granite.jpg" } ,
                 { "name": "Black Pearl Granite",  "category": "Granites", "colorName": "Black", "regionName": "South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/Black-Pearl-Granite.jpg" } ,
@@ -50,15 +47,12 @@
                 { "name": "Diamond fall",  "category": "Granites", "colorName": "-", "regionName": "South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/Diamond-fall.jpg" } ,
                 { "name": "Export Black Granite",  "category": "Granites", "colorName": "Black", "regionName": "South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/Export-Black-Granite.jpg" } ,
                 { "name": "Galaxy Black Granite",  "category": "Granites", "colorName": "Black", "regionName": "South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/Galaxy-Black-Granite.jpg" } ,
-                { "name": "Golden Summer Granite",  "category": "Granites", "colorName": "Gold", "regionName": "South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/Golden_Summer-Granite.jpg" } ,
+                
                 { "name": "Hassan Green Granite",  "category": "Granites", "colorName": "Green", "regionName": "South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/Hassan-Green-Granite.jpg" } ,
                 { "name": "Honey Brown Granite",  "category": "Granites", "colorName": "Brown", "regionName": "South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/Honey-Brown-Granite.jpg" } ,
                 { "name": "Ivory Beauty Granite",  "category": "Granites", "colorName": "Ivory", "regionName": "South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/Ivory-Beauty-Granite.jpg" } ,
                 { "name": "K Black Granite",  "category": "Granites", "colorName": "Black", "regionName": "South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/K-Black-Granite.jpg" } ,
-                { "name": "Leopard Skin Granite",  "category": "Granites", "colorName": "-", "regionName": "South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/leopard-skin-granite.jpg" } ,
-                { "name": "Maple Ice Granite",  "category": "Granites", "colorName": "-", "regionName": "South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/Maple-Ice-Granite.jpg" } ,
-                { "name": "Midnight Granite",  "category": "Granites", "colorName": "-", "regionName": "South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/Midnight-Granite.jpg" } ,
-                { "name": "Moon Valley Granite",  "category": "Granites", "colorName": "-", "regionName": "South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/Moon-Valley-Granite.jpg" } ,
+                
                 { "name": "Paradiso Green",  "category": "Granites", "colorName": "Green", "regionName": "South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/Paradiso-Green.jpg" } ,
                 { "name": "Raw Silk Ivory Granite",  "category": "Granites", "colorName": "Ivory", "regionName": "South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/Raw-Silk-Ivory-Granite.jpg" } ,
                 { "name": "Romantic Red Granite",  "category": "Granites", "colorName": "Red", "regionName": "South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/Romantic-Red-Granite.jpg" } ,
@@ -66,12 +60,29 @@
                 { "name": "Sadar Ali White Granite",  "category": "Granites", "colorName": "White", "regionName": "South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/Sadar-Ali-White-Granite.jpg" } ,
                 { "name": "Seera Grey Granite",  "category": "Granites", "colorName": "Grey", "regionName": "South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/Seera-Grey-Granite.jpg" } ,
                 { "name": "Steel Grey Granite",  "category": "Granites", "colorName": "Grey", "regionName": "South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/Steel-Grey-Granite.jpg" } ,
-                { "name": "Strawberry Granite",  "category": "Granites", "colorName": "Strawberry", "regionName": "South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/Strawberry-Granite.jpg" } ,
+                
                 { "name": "Tan Brown Granite",  "category": "Granites", "colorName": "Brown", "regionName": "South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/Tan-Brown-Granite.jpg" } ,
                 { "name": "Telephone Black Granite",  "category": "Granites", "colorName": "Black", "regionName": "South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/Tan-Brown-Granite.jpg" } ,
-                { "name": "Thunderwood Brown Granite",  "category": "Granites", "colorName": "Brown", "regionName": "South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/Thunderwood-Brown-Granite.jpg" } ,
-                { "name": "Tigerato Granite",  "category": "Granites", "colorName": "-", "regionName": "South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/Tigerato-Granite.jpg" } ,
-                { "name": "Titanium Granite",  "category": "Granites", "colorName": "-", "regionName": "South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/Titanium-Granite.jpg" }
+                
+            { "name": "Fish Brown", "category": "Granites", "colorName": "Brown", "regionName":"North India", "imagePath":"/assets/resources/images/products/granites/North-Indian-Granites/Fish-Brown.jpeg" },
+            { "name": "French Brown", "category": "Granites", "colorName": "Brown", "regionName":"North India", "imagePath":"/assets/resources/images/products/granites/North-Indian-Granites/French-Brown.jpeg" },
+            { "name": "Honey Brown", "category": "Granites", "colorName": "Brown", "regionName":"North India", "imagePath":"/assets/resources/images/products/granites/North-Indian-Granites/Honey-Brown.jpeg" },
+            { "name": "Icy Blue", "category": "Granites", "colorName": "Blue", "regionName":"North India", "imagePath":"/assets/resources/images/products/granites/North-Indian-Granites/Icy-Blue.jpeg" },
+            { "name": "Majestic Brown", "category": "Granites", "colorName": "Brown", "regionName":"North India", "imagePath":"/assets/resources/images/products/granites/North-Indian-Granites/Majestic-Brown.jpeg" },
+            { "name": "Royal Brown", "category": "Granites", "colorName": "Brown", "regionName":"North India", "imagePath":"/assets/resources/images/products/granites/North-Indian-Granites/Royal-Brown.jpeg" },
+            { "name": "Royalite Pink", "category": "Granites", "colorName": "Pink", "regionName":"North India", "imagePath":"/assets/resources/images/products/granites/North-Indian-Granites/Royalite-Pink.jpeg" },
+            { "name": "Arcateak", "category": "Granites", "colorName": "-", "regionName":"South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/Arcateak.jpeg" },
+            { "name": "Asian Sky", "category": "Granites", "colorName": "-", "regionName":"South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/Asian-Sky.jpeg" },
+            { "name": "Golden Summer", "category": "Granites", "colorName": "Gold", "regionName":"South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/Golden-Summer.jpeg" },
+            { "name": "Leopard Skin", "category": "Granites", "colorName": "-", "regionName":"South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/Leopard-Skin.jpeg" },
+            { "name": "Maple Ice", "category": "Granites", "colorName": "-", "regionName":"South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/Maple-Ice.jpeg" },
+            { "name": "Midnight", "category": "Granites", "colorName": "-", "regionName":"South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/Midnight.jpeg" },
+            { "name": "Moon Valley", "category": "Granites", "colorName": "-", "regionName":"South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/Moon-Valley.jpeg" },
+            { "name": "Panama", "category": "Granites", "colorName": "-", "regionName":"South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/Panama.jpeg" },
+            { "name": "Strawberry", "category": "Granites", "colorName": "Strawberry", "regionName":"South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/Strawberry.jpeg" },
+            { "name": "Thunderwood", "category": "Granites", "colorName": "-", "regionName":"South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/Thunderwood.jpeg" },
+            { "name": "Tigerato", "category": "Granites", "colorName": "-", "regionName":"South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/Tigerato.jpeg" },
+            { "name": "Titanium", "category": "Granites", "colorName": "-", "regionName":"South India", "imagePath":"/assets/resources/images/products/granites/South-Indian-Granites/Titanium.jpeg" }               
             ]
         },
         {         
@@ -88,7 +99,14 @@
                 { "name": "Milk Rose Marble", "category": "Marbles","colorName": "-","regionName": "South India", "imagePath":"/assets/resources/images/products/Marble-All-South-Indian/Milk-Rose-Marble.jpg" },
                 { "name": "Moon Valley Marble", "category": "Marbles","colorName": "-","regionName": "South India", "imagePath":"/assets/resources/images/products/Marble-All-South-Indian/Moon-Valley-Marble.jpg" },
                 { "name": "Panama Marble", "category": "Marbles","colorName": "-","regionName": "South India", "imagePath":"/assets/resources/images/products/Marble-All-South-Indian/Panama-Marble.jpg" },
-                { "name": "Sparrow Marble", "category": "Marbles","colorName": "-","regionName": "South India", "imagePath":"/assets/resources/images/products/Marble-All-South-Indian/Sparrow-Marble.jpg" }
+                { "name": "Sparrow Marble", "category": "Marbles","colorName": "-","regionName": "South India", "imagePath":"/assets/resources/images/products/Marble-All-South-Indian/Sparrow-Marble.jpg" },
+                { "name": "White", "category": "Marbles","colorName":"White", "regionName":"South India", "imagePath":"/assets/resources/images/products/Marble-All-South-Indian/White.jpeg" },
+                { "name": "Pink", "category": "Marbles","colorName":"Pink", "regionName":"South India", "imagePath":"/assets/resources/images/products/Marble-All-South-Indian/Pink.jpeg" },
+                { "name": "Katni", "category": "Marbles","colorName":"-", "regionName":"South India", "imagePath":"/assets/resources/images/products/Marble-All-South-Indian/Katni.jpeg" },
+                { "name": "Katni Dark", "category": "Marbles","colorName":"-", "regionName":"South India", "imagePath":"/assets/resources/images/products/Marble-All-South-Indian/Katni-Dark.jpeg" },
+                { "name": "Jaisalmer", "category": "Marbles","colorName":"-", "regionName":"South India", "imagePath":"/assets/resources/images/products/Marble-All-South-Indian/Jaisalmer.jpeg" },
+                { "name": "Green", "category": "Marbles","colorName":"Green", "regionName":"South India", "imagePath":"/assets/resources/images/products/Marble-All-South-Indian/Green.jpeg" },
+                { "name": "Chocolate", "category": "Marbles","colorName":"Chocolate", "regionName":"South India", "imagePath":"/assets/resources/images/products/Marble-All-South-Indian/Chocolate.jpeg" }
             ]
         },
         {         

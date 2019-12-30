@@ -360,16 +360,3 @@ if (navigator.userAgent.match(/(iPhone|Android|BlackBerry)/)) {
 
 
 
-
-/* Filter Javascript */ 
-function filterProduct(selTag){
-    var productDiv = document.getElementsByClassName("project");
-    var elemOption = selTag.options[selTag.selectedIndex].value.toLowerCase(); 
-    for (var i=0; i < productDiv.length; i++) {
-        productDiv[i].parentElement.style.display = (productDiv[i].classList.contains(elemOption)) ? "inline-block" : "none"; 
-        if(elemOption === 'all') {
-          productDiv[i].style.display = "block";
-        }
-    }      
-};
-/* Filter Javascript */ 
