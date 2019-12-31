@@ -1,6 +1,6 @@
 <app-filter-option (outputToParent)="getOutputVal($event)" (outputRegionToParent)="getOutputRegionVal($event)" (outputSizeToParent)="getOutputSizeVal($event)"></app-filter-option>
-<section class="ftco-section bg-light" *ngFor="let product of productsList | filterColor:'Granites':'productCat'">
-    <div class="container">
+<section class="ftco-section innerProd bg-light" *ngFor="let product of productsList">
+    <div class="container" *ngIf="product.productCat == 'Granites'">
         <div class="row justify-content-start mb-5 pb-2">
             <div class="col-md-4 heading-section">
                 <span class="subheading subheading-with-line"><small class="pr-2 bg-light">{{ product.pgTitle }}</small></span>
@@ -13,7 +13,7 @@
     </div>
     <div class="container">
         <div class="row no-gutters1">
-            <div class="{{classname}}" *ngFor="let item of product.product | filterColor:childCurrentVal:'colorName'| filterColor:childCurrentRegionVal:'regionName'"><!----> 
+            <div class="{{classname}}" *ngFor="let item of product.product | filterColor:childCurrentVal:'colorName'| filterColor:childCurrentRegionVal:'regionName' | filterColor:'Granites':'category'"><!----> 
                 <div class=" project">
                     <img [src]="item.imagePath" class="img-fluid product-object-fit" alt="{{item.name}}">
                     <div class="productText">

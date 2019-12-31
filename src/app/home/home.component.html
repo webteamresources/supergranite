@@ -14,7 +14,7 @@
     </div>
     <div class="container">
         <owl-carousel-o [options]="customOptions01">
-            <ng-container  *ngFor="let item of product.product; let i = index">
+            <ng-container  *ngFor="let item of product.product | slice:0:3; let i = index">
                 <ng-template carouselSlide [id]="i">
                     <div class="fadeInUp">
                         <div class=" project">

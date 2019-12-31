@@ -11,8 +11,6 @@ export class GranitesComponent implements OnInit {
   constructor(private productService: ProductService) { } 
   productsList: ProductDataModel[];
   productsDetails: ProductModel[];
-  productSec = true;
-  productCont = true;
   childSizeVal;
   classname;
   childCurrentVal:string = '';
@@ -30,10 +28,6 @@ export class GranitesComponent implements OnInit {
       }
       else {
           this.classname = 'col-md-6 col-lg-4'
-      }
-
-      if(this.productCont == false) {
-        this.productSec = false;
       }
   };
 

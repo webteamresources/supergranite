@@ -10,7 +10,7 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 export class ContactComponent implements OnInit {
 
   signupForm: FormGroup;
-  url = 'https://supergranitesandmarbles.firebaseio.com/formdata.json';
+  url = 'https://supergranitesmarbles.firebaseio.com/formdata.json';
 
   constructor(private http:HttpClient) { }
   pgTitle = 'Contact';
@@ -24,14 +24,10 @@ export class ContactComponent implements OnInit {
       'phone' : new FormControl(null, Validators.required),
       'email' : new FormControl(null, Validators.required),
       'message' : new FormControl(null)
-      //'hobbies' : new FormArray([])
     });
   }
-
   onSubmit() {
     const formdata = this.signupForm.value;
-    console.log(formdata);
-
     this.http.post(this.url, formdata)
     .subscribe(
       response => {
@@ -42,22 +38,6 @@ export class ContactComponent implements OnInit {
         this.formSubmitted = false;
         console.log (err.message);
       }
-    )
-
-
-    
+    )    
   }
-  // onSubmit() {
-  //   this.httpService.post<any>(this.formUrl, this.signupForm).subscribe(
-  //     (res) => console.log(res),
-  //     (err) => console.log(err)
-  //     );
-      
-  //   console.log(this.signupForm);
-  // }
-
-  // onAddHobby() {
-  //   const control = new FormControl(null, Validators.required);
-  //   (<FormArray>this.signupForm.get('hobbies')).push(control);
-  // }
 }
