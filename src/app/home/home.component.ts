@@ -15,7 +15,11 @@ import { ProductDataModel } from 'src/assets/shared/ProductDataModel';
   imports: [ CarouselModule ],
   declarations: [ HomeComponent ]
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit {  
+  
+  pagePath = ['granites', 'marbles', 'engineering-stone', 'pebble-and-cobble'];
+
+
   customOptions01: OwlOptions = {
     center: false,
     loop: false,
@@ -93,4 +97,6 @@ export class HomeComponent implements OnInit {
       }
     );
   }
+
+    
 }

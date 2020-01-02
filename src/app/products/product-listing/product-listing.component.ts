@@ -12,6 +12,9 @@ import { ProductModel } from 'src/assets/shared/product.model';
 })
 export class ProductListingComponent implements OnInit {
   constructor(private productService: ProductService) { } 
+  
+  pagePath = ['granites', 'marbles', 'engineering-stone', 'pebble-and-cobble'];
+  
   productsList: ProductDataModel[];
   productsDetails: ProductModel[];
 

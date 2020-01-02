@@ -19,7 +19,7 @@ import { GranitesComponent } from './products/granites/granites.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
-  {path:'', redirectTo:'/home', pathMatch:'full'},
+  {path:'', component:HomeComponent, data: { breadcrumb: 'Home' }, pathMatch:'full'},
   {path:'home', component:HomeComponent, data: { breadcrumb: 'Home' }},
   {path:'about', component:AboutComponent, data: { breadcrumb: 'About' }},
   {path:'products', component:ProductsComponent, children:[
@@ -37,11 +37,13 @@ const routes: Routes = [
   {path:'privacy-policy', component:PrivacyPolicyComponent, data: { breadcrumb: 'Privacy Policy'}},
   {path:'disclaimer', component:DisclaimerComponent, data: { breadcrumb: 'Disclaimer'}},
   {path:'faq', component: FaqComponent, data: { breadcrumb: 'faqs'}},  
-  { path: '**', pathMatch: 'full', component: PageNotFoundComponent, data: { breadcrumb: 'faqs'} }
+  { path: '**', pathMatch: 'full', component: PageNotFoundComponent, data: { breadcrumb: '404'} }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    onSameUrlNavigation: 'reload'
+  })],
   exports: [RouterModule]
 })
 

@@ -1,6 +1,6 @@
 <app-banner></app-banner>
 <router-outlet></router-outlet>
-<section class="ftco-section bg-light" *ngFor="let product of productsList">
+<section class="ftco-section bg-light" *ngFor="let product of productsList; let i = index;">
     <div class="container">
         <div class="row justify-content-start mb-5 pb-2">
             <div class="col-md-4 heading-section">
@@ -9,6 +9,7 @@
             </div>
             <div class="col-md-8 pl-md-5 heading-section">
                 <div class="pl-md-4 border-line" [innerHTML]="product.contentTxt"></div>
+                <div class="pl-md-4 border-line"><a routerLink="{{pagePath[i]}}" class="btn-custom">Know More ></a></div>
             </div>
         </div>
     </div>
