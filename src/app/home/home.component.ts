@@ -17,7 +17,7 @@ import { ProductDataModel } from 'src/assets/shared/ProductDataModel';
 })
 export class HomeComponent implements OnInit {  
   
-  pagePath = ['granites', 'marbles', 'engineering-stone', 'pebble-and-cobble'];
+  pagePath = ['products/granites', 'products/marbles', 'products/engineering-stone', 'products/pebble-and-cobble'];
 
 
   customOptions01: OwlOptions = {
