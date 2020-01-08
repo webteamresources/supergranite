@@ -19,6 +19,7 @@ export class FooterComponent implements OnInit {
   faEnvelope = faEnvelope;
   faArrowRight = faArrowRight;
   constructor(private http: HttpClient) { }
+  currentyear = new Date().getFullYear();
 
   ngOnInit() {    
     this.http.get(this.configUrl)

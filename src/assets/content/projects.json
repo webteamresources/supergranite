@@ -1,61 +1,38 @@
-{   
-    "projectsDetails": [
-                        {
-                            "workName":"Lobby Area",
-                            "productCat":"Project",
-                            "productImg":"/assets/resources/images/projects/private-sector/thumb/thumb-01.jpg"
-                        },
-                        {
-                            "workName":"Reception",
-                            "productCat":"Project",
-                            "productImg":"/assets/resources/images/projects/private-sector/thumb/thumb-02.jpg"
-                        },
-                        {
-                            "workName":"Pantry",
-                            "productCat":"Project",
-                            "productImg":"/assets/resources/images/projects/private-sector/thumb/thumb-03.jpg"
-                        },
-                        {
-                            "workName":"Garden",
-                            "productCat":"Project",
-                            "productImg":"/assets/resources/images/projects/private-sector/thumb/thumb-04.jpg"
-                        },
-                        {
-                            "workName":"Hall",
-                            "productCat":"Project",
-                            "productImg":"/assets/resources/images/projects/private-sector/thumb/thumb-05.jpg"
-                        },
-                        {
-                            "workName":"Meeting Room",
-                            "productCat":"Project",
-                            "productImg":"/assets/resources/images/projects/private-sector/thumb/thumb-06.jpg"
-                        }
-                    ],
-    "projectsDetails2": [
-                        {
-                            "workName":"Lobby Area",
-                            "productCat":"Project",
-                            "productImg":"/assets/resources/images/projects/private-sector/thumb/thumb-07.jpg"
-                        },
-                        {
-                            "workName":"Reception",
-                            "productCat":"Project",
-                            "productImg":"/assets/resources/images/projects/private-sector/thumb/thumb-08.jpg"
-                        },
-                        {
-                            "workName":"Pantry",
-                            "productCat":"Project",
-                            "productImg":"/assets/resources/images/projects/private-sector/thumb/thumb-09.jpg"
-                        },
-                        {
-                            "workName":"Hall",
-                            "productCat":"Project",
-                            "productImg":"/assets/resources/images/projects/private-sector/thumb/thumb-10.jpg"
-                        },
-                        {
-                            "workName":"Meeting Room",
-                            "productCat":"Project",
-                            "productImg":"/assets/resources/images/projects/private-sector/thumb/thumb-11.jpg"
-                        }
-                    ]
+{
+    "productDetails": [
+        {
+            "projectCat":"Private Sector Projects",
+            "description" : "An experience of over couple of decades has made us a part of hundreds of interiors from a house to commercial offices. Granite counter tops to our very well-known engineered composite and quartz stone slabs flooring are part of our customer favorites.",            
+            "project": [
+                {"workName":"Lobby Area","projectImg":"/assets/resources/images/projects/private-sector/thumb/thumb-01.jpg"
+                },
+                {"workName":"Reception","projectImg":"/assets/resources/images/projects/private-sector/thumb/thumb-02.jpg"
+                },
+                {"workName":"Pantry","projectImg":"/assets/resources/images/projects/private-sector/thumb/thumb-03.jpg"
+                },
+                {"workName":"Garden","projectImg":"/assets/resources/images/projects/private-sector/thumb/thumb-04.jpg"
+                },
+                {"workName":"Hall","projectImg":"/assets/resources/images/projects/private-sector/thumb/thumb-05.jpg"
+                },
+                {"workName":"Meeting Room","projectImg":"/assets/resources/images/projects/private-sector/thumb/thumb-06.jpg"
+                }
+            ]
+        },
+        {
+            "projectCat":"Government Sector Projects",
+            "description" : "The Company shares an indisputable reputation across the industry in India and is a trusted name owing to its honest and dedicated business policies in the country. We are privileged to vendor our products to nationalized projects viz. Government offices, Airport lobbies, Central Gardens and parks, etc.",          
+            "project": [
+                {"workName":"Lobby Area","projectImg":"/assets/resources/images/projects/private-sector/thumb/thumb-07.jpg"
+                },
+                {"workName":"Reception","projectImg":"/assets/resources/images/projects/private-sector/thumb/thumb-08.jpg"
+                },
+                {"workName":"Pantry","projectImg":"/assets/resources/images/projects/private-sector/thumb/thumb-09.jpg"
+                },
+                {"workName":"Hall","projectImg":"/assets/resources/images/projects/private-sector/thumb/thumb-10.jpg"
+                },
+                {"workName":"Meeting Room","projectImg":"/assets/resources/images/projects/private-sector/thumb/thumb-11.jpg"
+                }
+            ]
+        }
+    ]
 }

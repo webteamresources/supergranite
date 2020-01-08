@@ -8,26 +8,26 @@
         </div>
       </div>
     </div>
-  </section>
-<section class="ftco-section bg-light">
+</section>
+<section class="ftco-section bg-light" *ngFor="let project of projectsContent; let i = index;">
     <div class="container">
         <div class="row justify-content-start mb-5 pb-2">
             <div class="col-md-4 heading-section">
                 <span class="subheading subheading-with-line"><small class="pr-2 bg-light">{{ pgTitle }}</small></span>
-                <h2 class="mb-4">{{ category }} </h2>
+                <h2 class="mb-4">{{ project.projectCat }} </h2>
             </div>
             <div class="col-md-8 pl-md-5 heading-section">
                 <div class="pl-md-4 border-line">
-                    <p>{{ description }}</p>
+                    <p>{{ project.description }}</p>
                 </div>
             </div>
         </div>
     </div>    
     <div class="container">
         <div class="row no-gutters1">
-            <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let project of projectsDetails">
+            <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let project of project.project">
                 <div class=" project">
-                    <img [src]="project.productImg" class="img-fluid product-object-fit" alt="{{project.workName}}">
+                    <img [src]="project.projectImg" class="img-fluid product-object-fit" alt="{{project.workName}}">
                     <!-- <div class="productText">
                         <h3><a href="#">{{project.workName}}</a></h3>
                     </div> -->
@@ -36,7 +36,7 @@
         </div>
     </div>
 </section>
-<section class="ftco-section bg-light">
+<!-- <section class="ftco-section bg-light">
     <div class="container">
         <div class="row justify-content-start mb-5 pb-2">
             <div class="col-md-4 heading-section">
@@ -56,11 +56,11 @@
             <div class="col-md-6 col-lg-4 fadeInUp" *ngFor="let project of projectsDetails2">
                 <div class=" project">
                     <img [src]="project.productImg" class="img-fluid product-object-fit" alt="{{project.workName}}">
-                    <!-- <div class="productText">
+                     <div class="productText">
                         <h3><a href="#">{{project.workName}}</a></h3>
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
+</section> -->
