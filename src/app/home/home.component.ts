@@ -4,6 +4,7 @@ import { ProductService } from './../../assets/shared/product.service';
 import { ProductModel } from './../../assets/shared/product.model';
 import { ProductDataModel } from 'src/assets/shared/ProductDataModel';
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -17,7 +18,7 @@ import { ProductDataModel } from 'src/assets/shared/ProductDataModel';
 })
 export class HomeComponent implements OnInit {  
   
-  pagePath = ['products/granites', 'products/marbles', 'products/engineering-stone', 'products/pebble-and-cobble'];
+  pagePath = ['../products/granites/', '../products/marbles', '../products/engineering-stone', '../products/pebble-and-cobble'];
 
 
   customOptions01: OwlOptions = {
