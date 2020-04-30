@@ -32,7 +32,7 @@
     "bootstrap": "^4.4.1",
     "chart.js": "^2.5.0",
     "font-awesome": "^4.7.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jquery.stellar": "^0.6.2",
     "magnific-popup": "^1.1.0",
     "ngx-lightbox": "^1.2.0",
